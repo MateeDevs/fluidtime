@@ -1,0 +1,16 @@
+.env*
+*.dmg
+/solidtime-api.json
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.mobileprovision
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+.build/

@@ -1,0 +1,3441 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "updates.openReleases": {
+      "comment": "Opens the project GitHub releases page in the default browser for manual updates. Does not start Sparkle.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open GitHub releases"
+          }
+        }
+      }
+    },
+    "window.actions": {
+      "comment": "Tooltip and accessibility label for the compact main window toolbar actions menu.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actions"
+          }
+        }
+      }
+    },
+    "info.about": {
+      "comment": "Tooltip and accessibility label for an information button. The parameter is the metric or control title.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About %@"
+          }
+        }
+      }
+    },
+    "analytics.workHelp": {
+      "comment": "Explains merged tracked work without subtracting inferred lunch again.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work time adds your tracked intervals. Overlapping entries count only once. Lunch and other gaps are not included."
+          }
+        }
+      }
+    },
+    "analytics.gapsHelp": {
+      "comment": "Explains the remaining gaps within daily attendance spans.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other gaps are time between tracked entries, excluding the estimated lunch gap. They do not count as tracked work."
+          }
+        }
+      }
+    },
+    "workspace.navigation": {
+      "comment": "Accessibility label for the main window toolbar view switcher.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View"
+          }
+        }
+      }
+    },
+    "menuBar.projectColor": {
+      "comment": "Menu bar setting. When enabled, the active timer dot uses its project color. The standard dot is used when the color is unavailable.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use project color for the active dot"
+          }
+        }
+      }
+    },
+    "analytics.previousMonthToDate": {
+      "comment": "Work during the same elapsed portion of the previous month, shown when This month is selected.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous month to date"
+          }
+        }
+      }
+    },
+    "menuBar.website": {
+      "comment": "Menu bar panel link that opens the configured Solidtime instance in the default browser.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime website"
+          }
+        }
+      }
+    },
+    "menuBar.quit": {
+      "comment": "Compact menu bar panel button that quits Fluidtime without stopping the server timer.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit"
+          }
+        }
+      }
+    },
+    "projects.manage": {
+      "comment": "Opens the searchable project visibility sheet in Tracking settings.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose visible projects…"
+          }
+        }
+      }
+    },
+    "projects.done": {
+      "comment": "Closes the project visibility sheet. Changes are saved immediately.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Done"
+          }
+        }
+      }
+    },
+    "earnings.enabled": {
+      "comment": "Switch in Earnings settings. Off by default; hides private earnings and rate controls when disabled.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable earnings"
+          }
+        }
+      }
+    },
+    "earnings.enabledHelp": {
+      "comment": "Explanation of the optional private earnings feature.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show a private earnings estimate in Overview. Touch ID is required to view earnings or edit your hourly rate."
+          }
+        }
+      }
+    },
+    "projects.selectAll": {
+      "comment": "Button in Visible projects settings. Applies to project picker choices in the selected organization only. Includes every available project, even when search hides some rows.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select all projects"
+          }
+        }
+      }
+    },
+    "projects.deselectAll": {
+      "comment": "Button in Visible projects settings. Applies to project picker choices in the selected organization only. Includes every available project, even when search hides some rows.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deselect all projects"
+          }
+        }
+      }
+    },
+    "projects.visibilityTitle": {
+      "comment": "Heading for project selection preferences in Tracking settings.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visible projects"
+          }
+        }
+      }
+    },
+    "projects.visibilityHelp": {
+      "comment": "Explains local project picker preferences; this never archives projects or filters history.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose which projects appear when you start or edit a timer."
+          }
+        }
+      }
+    },
+    "projects.visibilityEmpty": {
+      "comment": "Empty state for the list of non-archived projects that can be selected for time entries.",
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No projects are available in this organization."
+          }
+        }
+      }
+    },
+    "API key": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "API key"
+          }
+        }
+      },
+      "comment": "Account settings field label. API means application programming interface; Solidtime calls its user-created access credential an API key."
+    },
+    "Account": {
+      "extractionState": "manual",
+      "comment": "Settings tab for the Solidtime instance and API key.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        }
+      }
+    },
+    "Active indicator": {
+      "extractionState": "manual",
+      "comment": "Menu bar display option: a clock with a dot only while a timer is running. The displayed value describes the dot rather than a duration.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer status dot"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        }
+      }
+    },
+    "Choose an available project before saving": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose an available project before saving"
+          }
+        }
+      }
+    },
+    "Clock only": {
+      "extractionState": "manual",
+      "comment": "Menu bar display option showing only the clock icon.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clock only"
+          }
+        }
+      }
+    },
+    "Connect": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect"
+          }
+        }
+      }
+    },
+    "Connect to Solidtime": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect to Solidtime"
+          }
+        }
+      }
+    },
+    "Connect your Solidtime account to track time from the menu bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect your Solidtime account to track time from the menu bar"
+          }
+        }
+      }
+    },
+    "Connect your account in the Account tab to choose an organization": {
+      "extractionState": "manual",
+      "comment": "Empty state in Tracking settings when disconnected.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect your account in the Account tab to choose an organization"
+          }
+        }
+      }
+    },
+    "Connected as %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected as %@"
+          }
+        }
+      },
+      "comment": "Connection status in Account settings. The placeholder is the user's display name; preserve user-provided text verbatim."
+    },
+    "Couldn't load all time entries. Refresh to try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load all your time entries. Refresh and try again."
+          }
+        }
+      },
+      "comment": "An incomplete response prevented loading all entries. Existing data is retained; Refresh entries performs another read."
+    },
+    "Couldn't read the response from Solidtime": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't read the Solidtime data. Refresh and try again."
+          }
+        }
+      },
+      "comment": "The response could not be read. Refresh entries lets the user check the latest server state before trying an action again."
+    },
+    "Couldn't read your API key from Keychain. Enter it again in Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't access your saved API key. Enter it again in Account settings."
+          }
+        }
+      },
+      "comment": "The saved credential could not be accessed. The user can enter the API key again in the Account tab of Settings."
+    },
+    "Couldn't remove your API key from Keychain": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't remove your saved API key. Try disconnecting again."
+          }
+        }
+      },
+      "comment": "Disconnecting could not remove the saved local credential. The account remains connected so the user can retry Disconnect."
+    },
+    "Couldn't save your API key in Keychain": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save your API key on this Mac. Try connecting again."
+          }
+        }
+      },
+      "comment": "The API key could not be saved locally during connection. Connecting again retries credential storage."
+    },
+    "Couldn't update your API key in Keychain": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't update your saved API key. Try connecting again."
+          }
+        }
+      },
+      "comment": "The replacement API key could not be saved locally. Connecting again retries credential storage."
+    },
+    "Create an API key in your Solidtime account settings. Your key is stored securely in Keychain.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create an API key in your Solidtime account settings. Fluidtime stores it in Keychain on this Mac."
+          }
+        }
+      },
+      "comment": "Account settings help. API means application programming interface. Solidtime is the service name. Keychain is the macOS credential store; use the platform's localized term for it."
+    },
+    "Description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Description"
+          }
+        }
+      }
+    },
+    "Disconnect": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disconnect"
+          }
+        }
+      }
+    },
+    "Disconnect from Solidtime?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disconnect from Solidtime?"
+          }
+        }
+      }
+    },
+    "Display": {
+      "extractionState": "manual",
+      "comment": "Label for the kind of information shown in the macOS menu bar.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        }
+      }
+    },
+    "Edit entry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit entry"
+          }
+        }
+      }
+    },
+    "Edit time entry": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit time entry"
+          }
+        }
+      }
+    },
+    "Elapsed time %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elapsed time %@"
+          }
+        }
+      },
+      "comment": "Accessibility label for the active timer duration. The placeholder is elapsed hours:minutes:seconds, not a time of day."
+    },
+    "Enter a valid instance address": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a valid Solidtime address"
+          }
+        }
+      },
+      "comment": "Validation error for an invalid Solidtime web address. The address field is in the Account tab of Settings."
+    },
+    "Enter a valid instance address, such as https://app.solidtime.io": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter a valid Solidtime address, such as https://app.solidtime.io"
+          }
+        }
+      },
+      "comment": "Validation error for an invalid Solidtime address. Keep the example URL unchanged."
+    },
+    "Enter your API key": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter your API key"
+          }
+        }
+      },
+      "comment": "Placeholder and validation message for the required API key field. API is the standard Solidtime credential term."
+    },
+    "Fluidtime": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime"
+          }
+        }
+      }
+    },
+    "Fluidtime keeps running when you close this window": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime keeps running when you close this window"
+          }
+        }
+      }
+    },
+    "Fluidtime, no timer running": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, no timer running"
+          }
+        }
+      }
+    },
+    "Fluidtime, timer running": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, timer running"
+          }
+        }
+      }
+    },
+    "Fluidtime, timer running, %@": {
+      "extractionState": "manual",
+      "comment": "Menu bar accessibility label. The placeholder is the active timer duration in hours:minutes or hours:minutes:seconds, not a time of day.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, timer running, %@"
+          }
+        }
+      }
+    },
+    "Fluidtime, this week's total %@": {
+      "extractionState": "manual",
+      "comment": "Menu bar accessibility label. The placeholder is the total work duration for the account's current week, formatted as hours:minutes or hours:minutes:seconds.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, this week's total %@"
+          }
+        }
+      }
+    },
+    "Fluidtime, today's total %@": {
+      "extractionState": "manual",
+      "comment": "Menu bar accessibility label. The placeholder is the total work duration for today, formatted as hours:minutes or hours:minutes:seconds, not a time of day.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, today's total %@"
+          }
+        }
+      }
+    },
+    "Instance address": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime address"
+          }
+        }
+      },
+      "comment": "Account settings label for the web address of the hosted or self-hosted Solidtime service."
+    },
+    "Join an organization on your instance webpage to start tracking time": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create or join an organization on Solidtime to start tracking time"
+          }
+        }
+      },
+      "comment": "Shown when the connected account has no organization memberships. Creating or joining an organization happens on the Solidtime website."
+    },
+    "Keep the description under 5,000 characters": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use 5,000 characters or fewer"
+          }
+        }
+      },
+      "comment": "Validation error when an entry description exceeds 5,000 characters. Exactly 5,000 characters are allowed."
+    },
+    "Keyboard shortcut": {
+      "extractionState": "manual",
+      "comment": "Section heading in the Menu bar settings tab.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keyboard shortcut"
+          }
+        }
+      }
+    },
+    "Menu bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menu bar"
+          }
+        }
+      }
+    },
+    "New timer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New timer"
+          }
+        }
+      }
+    },
+    "No description": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No description"
+          }
+        }
+      },
+      "comment": "Fallback title for an entry whose user-provided description is empty or whitespace."
+    },
+    "No project": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No project"
+          }
+        }
+      },
+      "comment": "Picker option and entry label indicating that no project is assigned."
+    },
+    "Show or hide Fluidtime": {
+      "extractionState": "manual",
+      "comment": "Global shortcut recorder label. Toggles the menu in menu bar modes or opens the main app window in window-only mode.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Fluidtime"
+          }
+        }
+      }
+    },
+    "Show or hide the menu even when another app is active": {
+      "extractionState": "manual",
+      "comment": "Help for the global shortcut. The menu is Fluidtime's menu bar panel; the shortcut can be used while another app has focus.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle the menu from another app"
+          }
+        }
+      }
+    },
+    "Open Solidtime": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Solidtime"
+          }
+        }
+      }
+    },
+    "Organization": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organization"
+          }
+        }
+      }
+    },
+    "Project": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Project"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit Fluidtime"
+          }
+        }
+      },
+      "comment": "Button that terminates Fluidtime. It does not stop a timer running on the Solidtime server."
+    },
+    "Recent entries": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent entries"
+          }
+        }
+      }
+    },
+    "Refresh time entries": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh entries"
+          }
+        }
+      },
+      "comment": "Tooltip, accessibility label, and error-recovery button label. This action reads the latest entries; it does not retry a failed write."
+    },
+    "Restore default": {
+      "extractionState": "manual",
+      "comment": "Button resetting the global keyboard shortcut to Control Option Shift Command F.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore default"
+          }
+        }
+      }
+    },
+    "Running timer": {
+      "extractionState": "manual",
+      "comment": "Menu bar display option showing the elapsed duration of the currently running timer, not today or week totals.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer duration"
+          }
+        }
+      }
+    },
+    "Save changes": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save changes"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "Show seconds": {
+      "extractionState": "manual",
+      "comment": "Toggle controlling seconds only in the menu bar, not the app panel.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show seconds"
+          }
+        }
+      }
+    },
+    "Solidtime account": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime account"
+          }
+        }
+      }
+    },
+    "Solidtime couldn't complete the request. Try again in a moment.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime couldn't complete this action. Try again in a moment."
+          }
+        }
+      },
+      "comment": "Generic server error. Describe an unsuccessful user action without referring to HTTP requests."
+    },
+    "Solidtime couldn't save this entry. Refresh and check your timer and project.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't save the entry. Refresh, then check your timer and project."
+          }
+        }
+      },
+      "comment": "An entry write failed validation or conflicted with server state. Refresh before checking the timer and project; no write is retried automatically."
+    },
+    "Solidtime didn't return the number of time entries": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't load your time entries. Refresh and try again."
+          }
+        }
+      },
+      "comment": "The server omitted information required to load all entries safely. Explain the failed task rather than the missing API field."
+    },
+    "Start a new timer for %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start a new timer for %@"
+          }
+        }
+      },
+      "comment": "Tooltip and accessibility label for a recent-entry play button with no current timer. The placeholder is the entry description or localized No description fallback. A new entry is created; the completed entry is not resumed or edited."
+    },
+    "Start timer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start timer"
+          }
+        }
+      }
+    },
+    "Stop timer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop timer"
+          }
+        }
+      }
+    },
+    "This entry doesn't belong to your account. Refresh and try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This entry isn't available for your account. Refresh and try again."
+          }
+        }
+      },
+      "comment": "The app cannot act on this entry because its user or organization membership differs from the current account."
+    },
+    "This instance returned an unexpected response. Check that it supports the Solidtime API.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't read the data from Solidtime. Check your Solidtime address in Account settings."
+          }
+        }
+      },
+      "comment": "The returned data could not be decoded as Solidtime data. Direct the user to the Solidtime address field in Account settings, without exposing API implementation details."
+    },
+    "This item couldn't be found. Refresh and try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't find this item. Refresh and try again."
+          }
+        }
+      },
+      "comment": "The requested resource was not found. It may be an entry or another account resource; do not imply that it previously existed or was deleted."
+    },
+    "This week": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This week"
+          }
+        }
+      }
+    },
+    "This week's total": {
+      "extractionState": "manual",
+      "comment": "Menu bar display option showing time tracked this week in the selected organization.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This week's total"
+          }
+        }
+      }
+    },
+    "Time totals": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time preferences"
+          }
+        }
+      },
+      "comment": "Heading for the read-only time zone and week-start preferences in Tracking settings. This section does not display numeric totals."
+    },
+    "Time zone": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time zone"
+          }
+        }
+      },
+      "comment": "Read-only account preference label. The value is a time zone identifier supplied by Solidtime."
+    },
+    "Timer running": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer running"
+          }
+        }
+      }
+    },
+    "Today": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today"
+          }
+        }
+      }
+    },
+    "Today's total": {
+      "extractionState": "manual",
+      "comment": "Menu bar display option showing time tracked today in the selected organization.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today's total"
+          }
+        }
+      }
+    },
+    "menuBar.totalsHelp": {
+      "extractionState": "manual",
+      "comment": "Explanatory text in Menu bar settings.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Totals include your running timer in the selected organization"
+          }
+        }
+      }
+    },
+    "Too many requests. Wait a moment, then try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Too many requests. Wait a moment, then try again."
+          }
+        }
+      }
+    },
+    "tracking.totalsHelp": {
+      "extractionState": "manual",
+      "comment": "Help below the account time zone and first weekday. These preferences are changed on the Solidtime website, not in Fluidtime.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change your time zone and week start in your Solidtime account settings"
+          }
+        }
+      }
+    },
+    "Track time from your menu bar": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track time from your menu bar"
+          }
+        }
+      }
+    },
+    "Track time in": {
+      "extractionState": "manual",
+      "comment": "Label for the organization picker in Tracking settings.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Track time in"
+          }
+        }
+      }
+    },
+    "Tracking": {
+      "extractionState": "manual",
+      "comment": "Settings tab for organization selection and time preferences.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracking"
+          }
+        }
+      }
+    },
+    "Unavailable project": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable project"
+          }
+        }
+      },
+      "comment": "Picker option and entry label for a project that is archived, inaccessible, or absent from the loaded project list."
+    },
+    "Update connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Update connection"
+          }
+        }
+      }
+    },
+    "Updating Solidtime": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updating Solidtime"
+          }
+        }
+      }
+    },
+    "Use an HTTPS address to keep your API key secure": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start the address with https:// to protect your API key"
+          }
+        }
+      },
+      "comment": "Validation error for an insecure remote address. Keep https:// unchanged; it is the secure web-address prefix the user must enter."
+    },
+    "Week starts on": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Week starts on"
+          }
+        }
+      },
+      "comment": "Read-only account preference label. The value is a localized weekday name."
+    },
+    "What are you working on?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What are you working on?"
+          }
+        }
+      }
+    },
+    "You already have a running timer. Stop it before starting another.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A timer is already running. Stop it before starting another."
+          }
+        }
+      },
+      "comment": "A regular Start timer action found a server-side running timer. The separate recent-entry start button stops an existing timer automatically."
+    },
+    "Your API key doesn't have permission for this action": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You don't have permission for this action. Check your access on Solidtime."
+          }
+        }
+      },
+      "comment": "Authorization error; access may depend on the credential or organization role. Do not blame the user or imply that retrying grants access."
+    },
+    "Your API key wasn't accepted. Check it in Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your API key wasn't accepted. Enter a valid key in Account settings."
+          }
+        }
+      },
+      "comment": "Authentication error. Account settings means the Account tab in Fluidtime Settings, where the API key can be replaced."
+    },
+    "Your API key will be removed from this Mac. Any running timer will keep running on Solidtime.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your saved API key will be removed from this Mac. Any running timer will continue on Solidtime."
+          }
+        }
+      },
+      "comment": "Disconnect confirmation body. Only the local saved credential is removed; a server-side running timer continues."
+    },
+    "Your finished entries will appear here": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop a timer to see the entry here"
+          }
+        }
+      },
+      "comment": "Empty state after entries have loaded. Stop timer finishes a work entry, which can then appear in the recent list."
+    },
+    "Your recent entries will appear here": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recent entries aren't available yet"
+          }
+        }
+      },
+      "comment": "Placeholder while recent-entry data is not yet available. Do not imply the account has no completed entries."
+    },
+    "Your running timer changed on Solidtime. Refresh before stopping it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your running timer changed on Solidtime. Refresh your entries before stopping it."
+          }
+        }
+      },
+      "comment": "The server timer differs from the local timer. No stop is sent. Refresh entries updates the panel before the user tries again."
+    },
+    "Your timer is running in another organization. Stop it here, or select its organization to edit it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your timer is running in another organization. Choose that organization in Tracking settings to edit the entry."
+          }
+        }
+      },
+      "comment": "The running timer belongs to another organization. Tracking settings means the Tracking tab of Fluidtime Settings, which contains the organization picker. The panel still offers Stop timer."
+    },
+    "Your work time in the selected organization, including your running timer. Uses your Solidtime time zone and week start.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work totals include the running timer in the selected organization. They use your Solidtime time zone and week start."
+          }
+        }
+      },
+      "comment": "Tooltip for today and week totals, scoped to the selected organization. Account calendar preferences define period boundaries."
+    },
+    "duration.unavailable": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "—"
+          }
+        }
+      },
+      "comment": "Shown in place of a duration before the first successful synchronization."
+    },
+    "https://app.solidtime.io": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "https://app.solidtime.io"
+          }
+        }
+      },
+      "comment": "Placeholder example for the hosted Solidtime web address. Do not translate or alter the URL."
+    },
+    "Stop the current timer and start a new timer for %@": {
+      "extractionState": "manual",
+      "comment": "Tooltip and accessibility label for a recent entry start button while a timer is running. The placeholder is the user-provided entry description. The current timer will stop before a new entry starts.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop the current timer and start a new timer for %@"
+          }
+        }
+      }
+    },
+    "General": {
+      "extractionState": "manual",
+      "comment": "Settings tab for app startup behavior.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        }
+      }
+    },
+    "Startup": {
+      "extractionState": "manual",
+      "comment": "Section in General settings for launching the app at login.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Startup"
+          }
+        }
+      }
+    },
+    "Launch at login": {
+      "extractionState": "manual",
+      "comment": "Toggle controlling whether macOS opens Fluidtime when the user logs in.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at login"
+          }
+        }
+      }
+    },
+    "Open Fluidtime automatically when you log in to your Mac": {
+      "extractionState": "manual",
+      "comment": "Explains the launch at login toggle.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Fluidtime automatically when you log in to your Mac"
+          }
+        }
+      }
+    },
+    "loginItem.approvalHelp": {
+      "extractionState": "manual",
+      "comment": "macOS registered the login item but still requires user approval before launch at login can work. Login Items settings is a macOS settings pane; use its localized platform name.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at login needs your approval. Allow Fluidtime in Login Items settings."
+          }
+        }
+      }
+    },
+    "Open Login Items settings": {
+      "extractionState": "manual",
+      "comment": "Button that opens the macOS Login Items settings pane. Use the localized macOS pane name for Login Items.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Login Items settings"
+          }
+        }
+      }
+    },
+    "loginItem.unavailable": {
+      "extractionState": "manual",
+      "comment": "Explains a disabled Launch at login control when macOS cannot find the app as a login item. Do not promise a specific fix or that waiting resolves it.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launch at login isn't available"
+          }
+        }
+      }
+    },
+    "loginItem.updateFailed": {
+      "extractionState": "manual",
+      "comment": "Error shown when macOS did not apply a login item registration change. The toggle returns to the current system state.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't change launch at login. Try again."
+          }
+        }
+      }
+    },
+    "Updating launch at login": {
+      "extractionState": "manual",
+      "comment": "Accessibility label for the delayed progress indicator while changing login item registration.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updating launch at login"
+          }
+        }
+      }
+    },
+    "quit.help": {
+      "extractionState": "manual",
+      "comment": "Tooltip and accessibility hint for Quit Fluidtime. Quitting the Mac app leaves a server-side timer running.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Any running timer will continue on Solidtime"
+          }
+        }
+      }
+    },
+    "workspace.overview": {
+      "extractionState": "manual",
+      "comment": "Main window navigation destination for time statistics.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overview"
+          }
+        }
+      }
+    },
+    "workspace.history": {
+      "extractionState": "manual",
+      "comment": "Main window navigation destination for searchable entry history.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time entries"
+          }
+        }
+      }
+    },
+    "workspace.earnings": {
+      "extractionState": "manual",
+      "comment": "Main window navigation destination for private, estimated gross earnings.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earnings"
+          }
+        }
+      }
+    },
+    "workspace.openWindow": {
+      "extractionState": "manual",
+      "comment": "Opens the main app window, independently of the menu bar panel.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show main window"
+          }
+        }
+      }
+    },
+    "settings.workspace": {
+      "extractionState": "manual",
+      "comment": "Settings tab for presentation, work goals, and optional timer reminders.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workspace"
+          }
+        }
+      }
+    },
+    "analytics.thisMonth": {
+      "extractionState": "manual",
+      "comment": "Calendar month in the Solidtime user time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This month"
+          }
+        }
+      }
+    },
+    "analytics.lastMonth": {
+      "extractionState": "manual",
+      "comment": "Previous calendar month in the Solidtime user time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last month"
+          }
+        }
+      }
+    },
+    "analytics.last30Days": {
+      "extractionState": "manual",
+      "comment": "Rolling interval including today and the previous 29 local days.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 30 days"
+          }
+        }
+      }
+    },
+    "analytics.last90Days": {
+      "extractionState": "manual",
+      "comment": "Rolling interval including today and the previous 89 local days.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last 90 days"
+          }
+        }
+      }
+    },
+    "analytics.thisYear": {
+      "extractionState": "manual",
+      "comment": "Calendar year in the Solidtime user time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This year"
+          }
+        }
+      }
+    },
+    "analytics.customDates": {
+      "extractionState": "manual",
+      "comment": "Period picker option showing inclusive start and end date controls.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom dates"
+          }
+        }
+      }
+    },
+    "analytics.trackedDays": {
+      "extractionState": "manual",
+      "comment": "Average day denominator: local days with work entries.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Days with entries"
+          }
+        }
+      }
+    },
+    "analytics.weekdays": {
+      "extractionState": "manual",
+      "comment": "Average day denominator and numerator include only non-weekend days according to the calendar.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekdays"
+          }
+        }
+      }
+    },
+    "analytics.calendarDays": {
+      "extractionState": "manual",
+      "comment": "Average day denominator includes empty calendar days through today.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All calendar days"
+          }
+        }
+      }
+    },
+    "analytics.workTime": {
+      "extractionState": "manual",
+      "comment": "Time tracked by entries. Gaps between timers, including inferred lunch, are not counted or subtracted a second time.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work time"
+          }
+        }
+      }
+    },
+    "analytics.timeAtWork": {
+      "extractionState": "manual",
+      "comment": "Daily span from the earliest work start to the latest work end, including gaps such as inferred lunch.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time at work"
+          }
+        }
+      }
+    },
+    "analytics.untrackedGaps": {
+      "extractionState": "manual",
+      "comment": "Time between tracked entries within the daily attendance span, excluding the inferred lunch gap. Lunch is reported separately.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other gaps"
+          }
+        }
+      }
+    },
+    "analytics.attendanceHelp": {
+      "extractionState": "manual",
+      "comment": "Explains attendance as the span from the first timer start to the last timer end, rather than paid duration.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time at work spans the first work entry start to the last work entry end each day, or now while work is running. It includes lunch and other gaps."
+          }
+        }
+      }
+    },
+    "analytics.todayWork": {
+      "extractionState": "manual",
+      "comment": "Work time today, excluding unpaid breaks.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today's work"
+          }
+        }
+      }
+    },
+    "analytics.weekWork": {
+      "extractionState": "manual",
+      "comment": "Work time for the Solidtime user calendar week, excluding unpaid breaks.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This week's work"
+          }
+        }
+      }
+    },
+    "analytics.monthWork": {
+      "extractionState": "manual",
+      "comment": "Work time for the current calendar month, excluding unpaid breaks.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This month's work"
+          }
+        }
+      }
+    },
+    "analytics.todayAtWork": {
+      "extractionState": "manual",
+      "comment": "Today’s earliest work start to latest work end, including lunch and other gaps.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time at work today"
+          }
+        }
+      }
+    },
+    "analytics.averageOver": {
+      "extractionState": "manual",
+      "comment": "Picker defining which days count toward daily work and estimated lunch averages.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average day includes"
+          }
+        }
+      }
+    },
+    "analytics.averageDay": {
+      "extractionState": "manual",
+      "comment": "Average work duration over the selected day basis.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average workday"
+          }
+        }
+      }
+    },
+    "analytics.averageWeek": {
+      "extractionState": "manual",
+      "comment": "Total work divided by the number of calendar weeks touched by the selected period.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average per week"
+          }
+        }
+      }
+    },
+    "analytics.averageMonth": {
+      "extractionState": "manual",
+      "comment": "Total work divided by the number of calendar months touched by the selected period.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average per month"
+          }
+        }
+      }
+    },
+    "analytics.averages": {
+      "extractionState": "manual",
+      "comment": "Overview section containing daily, weekly, monthly, and estimated lunch averages.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Averages"
+          }
+        }
+      }
+    },
+    "analytics.averageHelp": {
+      "extractionState": "manual",
+      "comment": "Explains denominators; partial periods are not extrapolated.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily averages use your selected days. Weekly and monthly averages include partial calendar periods."
+          }
+        }
+      }
+    },
+    "analytics.previousWork": {
+      "extractionState": "manual",
+      "comment": "Work in the preceding comparable period.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previous period work"
+          }
+        }
+      }
+    },
+    "analytics.change": {
+      "extractionState": "manual",
+      "comment": "Percentage change in work time from the preceding comparable interval.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change from previous period"
+          }
+        }
+      }
+    },
+    "analytics.comparisonHelp": {
+      "extractionState": "manual",
+      "comment": "Explains comparison timing and unavailable percentage.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The previous total covers the same elapsed length of time in the preceding period. For a current period, this cutoff advances with time. Percentage change is unavailable when the previous total is zero."
+          }
+        }
+      }
+    },
+    "analytics.day": {
+      "extractionState": "manual",
+      "comment": "Calendar day in a statistics table, chart, or exported summary.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day"
+          }
+        }
+      }
+    },
+    "analytics.hours": {
+      "extractionState": "manual",
+      "comment": "Unit label on native charts; values are hours rather than clock time.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hours"
+          }
+        }
+      }
+    },
+    "analytics.period": {
+      "extractionState": "manual",
+      "comment": "Picker label for statistics and history date range.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Period"
+          }
+        }
+      }
+    },
+    "analytics.from": {
+      "extractionState": "manual",
+      "comment": "Inclusive start date in a custom period.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From"
+          }
+        }
+      }
+    },
+    "analytics.through": {
+      "extractionState": "manual",
+      "comment": "Inclusive final date in a custom period.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Through"
+          }
+        }
+      }
+    },
+    "analytics.dailyWork": {
+      "extractionState": "manual",
+      "comment": "Chart showing work duration per local day.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily work time"
+          }
+        }
+      }
+    },
+    "analytics.byProject": {
+      "extractionState": "manual",
+      "comment": "Chart using each Solidtime project’s configured color.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work by project"
+          }
+        }
+      }
+    },
+    "analytics.noWork": {
+      "extractionState": "manual",
+      "comment": "Empty state for project work distribution.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No work tracked in this period"
+          }
+        }
+      }
+    },
+    "analytics.dailyDetails": {
+      "extractionState": "manual",
+      "comment": "Table with per-day work, estimated lunch, attendance, and first and last work times.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily details"
+          }
+        }
+      }
+    },
+    "analytics.firstStart": {
+      "extractionState": "manual",
+      "comment": "Earliest timer start on a local calendar day.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "First start"
+          }
+        }
+      }
+    },
+    "analytics.lastEnd": {
+      "extractionState": "manual",
+      "comment": "Latest timer end on a local calendar day, or now for a running timer.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last end"
+          }
+        }
+      }
+    },
+    "analytics.unavailable": {
+      "extractionState": "manual",
+      "comment": "State before the first confirmed read; never displays zero as a verified total.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refresh your entries to see your totals"
+          }
+        }
+      }
+    },
+    "goals.title": {
+      "extractionState": "manual",
+      "comment": "Optional daily and weekly tracked work targets.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work targets"
+          }
+        }
+      }
+    },
+    "goals.daily": {
+      "extractionState": "manual",
+      "comment": "Progress toward the daily work target, excluding breaks.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily target"
+          }
+        }
+      }
+    },
+    "goals.weekly": {
+      "extractionState": "manual",
+      "comment": "Progress toward the account-calendar weekly work target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekly target"
+          }
+        }
+      }
+    },
+    "goals.remaining": {
+      "extractionState": "manual",
+      "comment": "Work duration remaining to meet a target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remaining"
+          }
+        }
+      }
+    },
+    "goals.dailyHours": {
+      "extractionState": "manual",
+      "comment": "Numeric settings field; maximum 24 hours, zero disables the target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily target in hours"
+          }
+        }
+      }
+    },
+    "goals.weeklyHours": {
+      "extractionState": "manual",
+      "comment": "Numeric settings field; maximum 168 hours, zero disables the target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weekly target in hours"
+          }
+        }
+      }
+    },
+    "goals.help": {
+      "extractionState": "manual",
+      "comment": "Targets count tracked work only. Gaps including inferred lunch never count.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Targets count work time only. Set a target to 0 to turn it off."
+          }
+        }
+      }
+    },
+    "goals.disabled": {
+      "extractionState": "manual",
+      "comment": "Empty state when both targets are disabled.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set work targets in Workspace settings"
+          }
+        }
+      }
+    },
+    "history.allBillability": {
+      "extractionState": "manual",
+      "comment": "Filter option including client-billable and non-billable entries.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All billability"
+          }
+        }
+      }
+    },
+    "history.billable": {
+      "extractionState": "manual",
+      "comment": "Client billing status. Non-billable work may still be paid to the user.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billable"
+          }
+        }
+      }
+    },
+    "history.nonBillable": {
+      "extractionState": "manual",
+      "comment": "Filter for entries not marked billable to a client; does not mean unpaid salary.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non-billable"
+          }
+        }
+      }
+    },
+    "history.billability": {
+      "extractionState": "manual",
+      "comment": "Picker label for client billing status.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billability"
+          }
+        }
+      }
+    },
+    "history.allProjects": {
+      "extractionState": "manual",
+      "comment": "History project filter option with no project restriction.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All projects"
+          }
+        }
+      }
+    },
+    "history.search": {
+      "extractionState": "manual",
+      "comment": "History search field; searches user-authored entry descriptions.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search descriptions"
+          }
+        }
+      }
+    },
+    "history.noEntries": {
+      "extractionState": "manual",
+      "comment": "History empty state after filters are applied.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No matching entries"
+          }
+        }
+      }
+    },
+    "history.adjustFilters": {
+      "extractionState": "manual",
+      "comment": "Recovery guidance for an empty filtered list.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try another date range, project, or search"
+          }
+        }
+      }
+    },
+    "history.matchingEntries": {
+      "extractionState": "manual",
+      "comment": "Label preceding the localized numeric result count.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matching entries"
+          }
+        }
+      }
+    },
+    "history.running": {
+      "extractionState": "manual",
+      "comment": "Entry end-time placeholder while the entry has no end.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Running"
+          }
+        }
+      }
+    },
+    "presets.title": {
+      "extractionState": "manual",
+      "comment": "Reusable timer presets scoped to the current account and organization.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pinned tasks"
+          }
+        }
+      }
+    },
+    "presets.pin": {
+      "extractionState": "manual",
+      "comment": "Saves description and project as a reusable timer preset on this Mac.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pin task"
+          }
+        }
+      }
+    },
+    "presets.unpin": {
+      "extractionState": "manual",
+      "comment": "Removes only the local timer preset; does not remove any time entries.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unpin task"
+          }
+        }
+      }
+    },
+    "presets.startHelp": {
+      "extractionState": "manual",
+      "comment": "Starting a pinned task first stops the current server timer, if any.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop the current timer and start a pinned task"
+          }
+        }
+      }
+    },
+    "reminder.title": {
+      "extractionState": "manual",
+      "comment": "Settings section for optional idle and long-running timer reminders.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer reminders"
+          }
+        }
+      }
+    },
+    "reminder.idleMinutes": {
+      "extractionState": "manual",
+      "comment": "Zero disables idle reminders. Idle time is based on macOS user input inactivity.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idle reminder in minutes"
+          }
+        }
+      }
+    },
+    "reminder.longHours": {
+      "extractionState": "manual",
+      "comment": "Zero disables reminders about unusually long running work timers.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long timer reminder in hours"
+          }
+        }
+      }
+    },
+    "reminder.help": {
+      "extractionState": "manual",
+      "comment": "Clarifies opt-in reminders and absence of automatic time edits.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set a reminder to 0 to turn it off. Reminders ask you to review your timer and never change entries automatically."
+          }
+        }
+      }
+    },
+    "reminder.timerRunning": {
+      "extractionState": "manual",
+      "comment": "Title of a transient, non-activating floating reminder.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your timer is still running"
+          }
+        }
+      }
+    },
+    "reminder.idleBody": {
+      "extractionState": "manual",
+      "comment": "Idle warning; it does not infer or deduct work time automatically.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You seem to be away from your Mac. Open Fluidtime to review your running timer."
+          }
+        }
+      }
+    },
+    "reminder.longBody": {
+      "extractionState": "manual",
+      "comment": "Long-running warning; it does not stop the timer.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your timer has been running for a while. Open Fluidtime to review it."
+          }
+        }
+      }
+    },
+    "reminder.dismiss": {
+      "extractionState": "manual",
+      "comment": "Dismisses the reminder without changing the running time entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dismiss reminder"
+          }
+        }
+      }
+    },
+    "feedback.showConfirmations": {
+      "extractionState": "manual",
+      "comment": "Enables short floating confirmations after confirmed server start or stop operations.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show timer confirmations"
+          }
+        }
+      }
+    },
+    "feedback.timerStarted": {
+      "extractionState": "manual",
+      "comment": "Shown only after Solidtime confirms a new work entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer started"
+          }
+        }
+      }
+    },
+    "feedback.timerStopped": {
+      "extractionState": "manual",
+      "comment": "Shown only after Solidtime confirms the entry end.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Timer stopped"
+          }
+        }
+      }
+    },
+    "feedback.failed": {
+      "extractionState": "manual",
+      "comment": "Floating error title; no success is implied.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't update your timer"
+          }
+        }
+      }
+    },
+    "feedback.review": {
+      "extractionState": "manual",
+      "comment": "Compact timer-feedback subtitle after an error. The full error remains available in Fluidtime.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Fluidtime for details"
+          }
+        }
+      }
+    },
+    "shortcut.toggleTimer": {
+      "extractionState": "manual",
+      "comment": "Global shortcut recorder label. Stops the current server timer or creates work from the last completed work entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start or stop timer"
+          }
+        }
+      }
+    },
+    "shortcut.timerHelp": {
+      "extractionState": "manual",
+      "comment": "Shortcut behavior: start using the latest completed entry, or stop the running timer.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starts a new timer using your last work entry, or stops the running timer. Changes are confirmed with a brief floating message."
+          }
+        }
+      }
+    },
+    "earnings.hidden": {
+      "extractionState": "manual",
+      "comment": "Privacy state; monetary values and salary controls are absent from the visible and accessibility views.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earnings are hidden"
+          }
+        }
+      }
+    },
+    "earnings.privacyHelp": {
+      "extractionState": "manual",
+      "comment": "Hidden preview description. Touch ID biometric verification is required every time values are revealed; there is no password or Apple Watch fallback.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use Touch ID to see an earnings preview based on your hourly rate in Settings"
+          }
+        }
+      }
+    },
+    "earnings.reveal": {
+      "extractionState": "manual",
+      "comment": "Accessible label and help for the Touch ID button that reveals the private field or preview after biometric verification.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verify with Touch ID"
+          }
+        }
+      }
+    },
+    "earnings.conceal": {
+      "extractionState": "manual",
+      "comment": "Accessible label for concealing the private hourly rate or earnings preview and clearing authenticated state.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hide private values"
+          }
+        }
+      }
+    },
+    "earnings.billableOnly": {
+      "extractionState": "manual",
+      "comment": "Optional earnings filter, off by default.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include only billable work"
+          }
+        }
+      }
+    },
+    "earnings.billableHelp": {
+      "extractionState": "manual",
+      "comment": "Distinguishes client billing from paid employment.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billable means charged to a client. Leave this off to include all your work time."
+          }
+        }
+      }
+    },
+    "earnings.estimate": {
+      "extractionState": "manual",
+      "comment": "Gross estimate from eligible work hours and effective hourly rates, without tax or deductions.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated earnings"
+          }
+        }
+      }
+    },
+    "earnings.estimateHelp": {
+      "extractionState": "manual",
+      "comment": "An approximate preview using the current fixed rate for the entire selected period. No historical rates or payroll rules. Inferred lunch is not deducted a second time.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This preview uses your fixed hourly rate and tracked work. Gaps between entries, including lunch, are unpaid. Taxes and deductions aren’t included."
+          }
+        }
+      }
+    },
+    "earnings.currency": {
+      "extractionState": "manual",
+      "comment": "Currency for all saved hourly rates in the selected account and organization.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Currency"
+          }
+        }
+      }
+    },
+    "earnings.hourlyRate": {
+      "extractionState": "manual",
+      "comment": "Positive decimal amount in the selected currency, per hour of work.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hourly rate"
+          }
+        }
+      }
+    },
+    "earnings.unsaved": {
+      "extractionState": "manual",
+      "comment": "The current single hourly rate or currency has not been saved yet.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsaved rate changes"
+          }
+        }
+      }
+    },
+    "earnings.validRate": {
+      "extractionState": "manual",
+      "comment": "Validation error for the fixed preview rate. Zero is allowed; negative and nonnumeric values are rejected.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter an hourly rate of 0 or more"
+          }
+        }
+      }
+    },
+    "earnings.readFailed": {
+      "extractionState": "manual",
+      "comment": "Keychain read error after successful biometric verification.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t load your hourly rate. Unlock Keychain and try again."
+          }
+        }
+      }
+    },
+    "earnings.saveFailed": {
+      "extractionState": "manual",
+      "comment": "Keychain save error. The authenticated editor preserves the unsaved draft until it is hidden or closed.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t save your hourly rate. Your changes are still here."
+          }
+        }
+      }
+    },
+    "export.entries": {
+      "extractionState": "manual",
+      "comment": "Opens the native save dialog to export all filtered entries, across every page, as CSV.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export entries"
+          }
+        }
+      }
+    },
+    "export.summary": {
+      "extractionState": "manual",
+      "comment": "Exports daily work, estimated lunch, attendance spans, and other gaps; excludes salary and earnings.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export daily summary"
+          }
+        }
+      }
+    },
+    "export.startUtc": {
+      "extractionState": "manual",
+      "comment": "CSV column heading. UTC is Coordinated Universal Time; timestamps use ISO 8601.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start in UTC"
+          }
+        }
+      }
+    },
+    "export.endUtc": {
+      "extractionState": "manual",
+      "comment": "CSV column heading. UTC is Coordinated Universal Time; an empty value indicates a running timer.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End in UTC"
+          }
+        }
+      }
+    },
+    "export.workSeconds": {
+      "extractionState": "manual",
+      "comment": "CSV column heading: tracked entry duration in seconds.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Work in seconds"
+          }
+        }
+      }
+    },
+    "export.atWorkSeconds": {
+      "extractionState": "manual",
+      "comment": "CSV column heading: first work start to last work end for the local day, including lunch and other gaps.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Time at work in seconds"
+          }
+        }
+      }
+    },
+    "export.gapSeconds": {
+      "extractionState": "manual",
+      "comment": "Daily summary CSV heading for attendance outside tracked work and the inferred lunch gap.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other gaps in seconds"
+          }
+        }
+      }
+    },
+    "export.yes": {
+      "extractionState": "manual",
+      "comment": "CSV boolean value for client-billable work.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes"
+          }
+        }
+      }
+    },
+    "export.no": {
+      "extractionState": "manual",
+      "comment": "CSV boolean value for an entry not marked billable to a client.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No"
+          }
+        }
+      }
+    },
+    "export.failed": {
+      "extractionState": "manual",
+      "comment": "Native file-save error; no Solidtime data was changed.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't export the file. Choose another location and try again."
+          }
+        }
+      }
+    },
+    "editor.start": {
+      "extractionState": "manual",
+      "comment": "Date and time field for an entry start, in the Solidtime user time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
+    "editor.end": {
+      "extractionState": "manual",
+      "comment": "Date and time field for a completed entry end, in the Solidtime user time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End"
+          }
+        }
+      }
+    },
+    "editor.billableHelp": {
+      "extractionState": "manual",
+      "comment": "Entry editor help. Client billability is separate from whether an employee is paid.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Billable controls client billing, not your hourly pay"
+          }
+        }
+      }
+    },
+    "editor.invalidDates": {
+      "extractionState": "manual",
+      "comment": "Date validation; a running entry has no end but its start cannot be in the future.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose a start before the end and keep both times in the past"
+          }
+        }
+      }
+    },
+    "editor.timerChanged": {
+      "extractionState": "manual",
+      "comment": "Refuses to edit a running entry after the server’s active entry changed.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your running timer changed on Solidtime. Cancel this edit and refresh your entries."
+          }
+        }
+      }
+    },
+    "updates.title": {
+      "extractionState": "manual",
+      "comment": "Settings section backed by the Sparkle update framework.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App updates"
+          }
+        }
+      }
+    },
+    "updates.automaticChecks": {
+      "extractionState": "manual",
+      "comment": "Sparkle preference; checks the signed update feed associated with GitHub Releases.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check for updates automatically"
+          }
+        }
+      }
+    },
+    "updates.automaticInstallation": {
+      "extractionState": "manual",
+      "comment": "Sparkle preference controlling automatic downloading and installation when supported.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Download and install updates automatically"
+          }
+        }
+      }
+    },
+    "updates.checkNow": {
+      "extractionState": "manual",
+      "comment": "Starts a user-initiated update check using Sparkle’s standard native interface.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check for updates"
+          }
+        }
+      }
+    },
+    "updates.help": {
+      "extractionState": "manual",
+      "comment": "Describes the source and signature verification without implying a current update exists.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updates come from Fluidtime’s GitHub Releases and are verified before installation"
+          }
+        }
+      }
+    },
+    "updates.unavailable": {
+      "extractionState": "manual",
+      "comment": "Displayed while in-app updates are intentionally disabled. The settings controls are hidden.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Updates aren’t available yet. Install new versions manually for now."
+          }
+        }
+      }
+    },
+    "timer.otherOrganization": {
+      "extractionState": "manual",
+      "comment": "The active timer belongs to another membership; selected-organization statistics exclude it.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Running in another organization"
+          }
+        }
+      }
+    },
+    "timer.noRecentEntry": {
+      "extractionState": "manual",
+      "comment": "Shortcut empty state when no completed work entry can supply the default.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create your first work entry in Fluidtime before using the timer shortcut"
+          }
+        }
+      }
+    },
+    "Fluidtime, timer running, today's total %@": {
+      "extractionState": "manual",
+      "comment": "Menu bar accessibility label. Placeholder is a duration in hours:minutes[:seconds]. Both the live timer status and daily total must be announced.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, timer running, today's total %@"
+          }
+        }
+      }
+    },
+    "Fluidtime, timer running, this week's total %@": {
+      "extractionState": "manual",
+      "comment": "Menu bar accessibility label. Placeholder is a duration in hours:minutes[:seconds]. Both live timer status and weekly total must be announced.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, timer running, this week's total %@"
+          }
+        }
+      }
+    },
+    "export.entriesFilename": {
+      "extractionState": "manual",
+      "comment": "Default export filename. Keep the Fluidtime product name and .csv extension; translate the descriptive part if useful.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-entries.csv"
+          }
+        }
+      }
+    },
+    "export.summaryFilename": {
+      "extractionState": "manual",
+      "comment": "Default daily-summary filename. Keep the Fluidtime product name and .csv extension.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-summary.csv"
+          }
+        }
+      }
+    },
+    "feedback.reminderIdle": {
+      "extractionState": "manual",
+      "comment": "Compact idle-reminder subtitle beneath a title explaining that the timer is still running.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Review your timer"
+          }
+        }
+      }
+    },
+    "feedback.reminderLong": {
+      "extractionState": "manual",
+      "comment": "Compact long-running reminder subtitle beneath a title explaining that the timer is still running.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Review your timer"
+          }
+        }
+      }
+    },
+    "analytics.lunchTime": {
+      "extractionState": "manual",
+      "comment": "Statistical unpaid lunch duration: the full longest completed gap between work entries whose midpoint is within the configured lunch window. No timer entry is created.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated lunch"
+          }
+        }
+      }
+    },
+    "analytics.averageLunch": {
+      "extractionState": "manual",
+      "comment": "Estimated lunch duration averaged over the selected day basis, including zero-lunch days in that basis. Lunch is a gap, not a recorded timer type.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Average daily lunch"
+          }
+        }
+      }
+    },
+    "analytics.lunchHelp": {
+      "extractionState": "manual",
+      "comment": "Explains how unpaid lunch is inferred from existing work entries without writing entries. The complete qualifying gap is counted, not only the portion within the configured window.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunch is the longest gap between work entries whose midpoint falls in your lunch hours. It appears after work resumes. Change lunch hours in Workspace settings."
+          }
+        }
+      }
+    },
+    "lunch.title": {
+      "extractionState": "manual",
+      "comment": "Workspace settings section for the time window used to infer an unpaid lunch gap between work timers.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunch estimate"
+          }
+        }
+      }
+    },
+    "lunch.start": {
+      "extractionState": "manual",
+      "comment": "Local time at which a gap midpoint first qualifies for the lunch estimate; inclusive.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunch window starts"
+          }
+        }
+      }
+    },
+    "lunch.end": {
+      "extractionState": "manual",
+      "comment": "Local time at which a gap midpoint no longer qualifies for the lunch estimate; exclusive.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunch window ends"
+          }
+        }
+      }
+    },
+    "lunch.help": {
+      "extractionState": "manual",
+      "comment": "The default window is 11:00–15:00. One fully bounded gap per local day is inferred as lunch; other gaps stay separate. This setting never changes tracked work or pay.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uses your Solidtime time zone. Counts the full longest gap between work entries whose midpoint falls within these hours. No time entry is created."
+          }
+        }
+      }
+    },
+    "export.lunchSeconds": {
+      "extractionState": "manual",
+      "comment": "Daily summary CSV heading for lunch inferred from gaps between tracked entries.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated lunch in seconds"
+          }
+        }
+      }
+    },
+    "earnings.settingsPrivacyHelp": {
+      "extractionState": "manual",
+      "comment": "Hidden hourly-rate settings help. No numeric rate or earnings are displayed before successful Touch ID verification.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use Touch ID to view or change your hourly rate. Your rate stays in Keychain on this Mac."
+          }
+        }
+      }
+    },
+    "earnings.fixedRateHelp": {
+      "extractionState": "manual",
+      "comment": "One fixed hourly rate only; there is no date-effective history. Preview values are approximate and do not represent payroll.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This rate applies to every period in the preview. Save your changes to keep them. Hiding the rate discards unsaved changes."
+          }
+        }
+      }
+    },
+    "earnings.saveRate": {
+      "extractionState": "manual",
+      "comment": "Stores the single preview hourly rate and currency in local Keychain after the user has authenticated with Touch ID.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save hourly rate"
+          }
+        }
+      }
+    },
+    "earnings.touchIdReason": {
+      "extractionState": "manual",
+      "comment": "Localized reason in the native macOS Touch ID prompt. This is an explanation of why authentication is needed, not an instruction to touch the sensor.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show your hourly rate or earnings preview"
+          }
+        }
+      }
+    },
+    "earnings.touchIdUnavailable": {
+      "extractionState": "manual",
+      "comment": "Biometric-only access is required. Also used when Touch ID is locked out, unavailable on the hardware, or not enrolled. Do not imply password fallback is available.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touch ID is unavailable. Set up Touch ID in System Settings to view private values."
+          }
+        }
+      }
+    },
+    "earnings.touchIdFailed": {
+      "extractionState": "manual",
+      "comment": "Biometric verification failed. The rate and preview stay hidden.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn’t verify with Touch ID. Try again to view private values."
+          }
+        }
+      }
+    },
+    "earnings.unlocking": {
+      "extractionState": "manual",
+      "comment": "Accessibility label for the delayed progress indicator while Touch ID and a private Keychain read complete.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verifying private access"
+          }
+        }
+      }
+    },
+    "earnings.connectFirst": {
+      "extractionState": "manual",
+      "comment": "The local preview rate is scoped to the Solidtime instance, user, and organization.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connect to Solidtime and choose an organization to set your hourly rate"
+          }
+        }
+      }
+    },
+    "earnings.changeInSettings": {
+      "extractionState": "manual",
+      "comment": "Help in the read-only preview. The rate can only be configured in the Settings window.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change your hourly rate in Earnings settings"
+          }
+        }
+      }
+    },
+    "earnings.touchIdLocked": {
+      "extractionState": "manual",
+      "comment": "Touch ID has been locked after failed attempts. Unlocking macOS reenables biometric checks; Fluidtime still requires a separate successful Touch ID check and does not offer password fallback.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touch ID is locked. Unlock your Mac with your password, then try Touch ID again."
+          }
+        }
+      }
+    },
+    "feedback.announcement": {
+      "extractionState": "manual",
+      "comment": "VoiceOver announcement for the compact timer feedback pill. First argument: localized status title. Second argument: full task description, duration, or guidance. Preserve both arguments even when the visible pill truncates text.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@. %2$@"
+          }
+        }
+      }
+    },
+    "projects.search": {
+      "comment": "Search field for local project visibility preferences.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search projects"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "projects.noMatches": {
+      "comment": "Empty result for project visibility search.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No matching projects"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "projects.currentAssignmentHelp": {
+      "comment": "Help for a disabled current project in an entry picker.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This entry keeps its current project assignment even when the project is hidden or unavailable."
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "analytics.selectedPeriod": {
+      "comment": "Heading for metrics governed by the analysis period picker.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected period"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "analytics.currentTotals": {
+      "comment": "Heading for current day, week, and month metrics.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current totals"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "command.find": {
+      "comment": "Menu action that focuses history search.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Find"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "command.toggleSidebar": {
+      "comment": "View menu action toggling the workspace sidebar.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show or hide sidebar"
+          }
+        }
+      },
+      "extractionState": "manual"
+    },
+    "earnings.unlockPreview": {
+      "extractionState": "manual",
+      "comment": "Button below the hidden earnings explanation. Requires fresh Touch ID verification before revealing the preview.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock earnings"
+          }
+        }
+      }
+    },
+    "account.loading": {
+      "extractionState": "manual",
+      "comment": "Shown only after the account load exceeds the delayed progress threshold.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Loading your account"
+          }
+        }
+      }
+    },
+    "account.unavailable": {
+      "extractionState": "manual",
+      "comment": "Saved or pending account could not be loaded. Do not imply credentials were removed.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account unavailable"
+          }
+        }
+      }
+    },
+    "account.unavailableHelp": {
+      "extractionState": "manual",
+      "comment": "Recovery guidance after account loading fails.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try refreshing, or check your connection in Settings."
+          }
+        }
+      }
+    },
+    "tracker.start": {
+      "extractionState": "manual",
+      "comment": "Compact primary action to start tracking a new work entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start"
+          }
+        }
+      }
+    },
+    "tracker.stop": {
+      "extractionState": "manual",
+      "comment": "Compact primary action to finish the running work entry. This is not pause.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop"
+          }
+        }
+      }
+    },
+    "tracker.unpinTask": {
+      "extractionState": "manual",
+      "comment": "Submenu listing locally pinned tasks that can be removed from the shortcuts.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unpin a task"
+          }
+        }
+      }
+    },
+    "overview.summary": {
+      "extractionState": "manual",
+      "comment": "Overview tab with tracked totals, goals, averages, and a biometric earnings card.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summary"
+          }
+        }
+      }
+    },
+    "overview.charts": {
+      "extractionState": "manual",
+      "comment": "Overview tab with averages, period comparisons, and time and project charts.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analysis"
+          }
+        }
+      }
+    },
+    "overview.calculationHelp": {
+      "extractionState": "manual",
+      "comment": "Accessible label and title of the native analytics information popover.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How these totals are calculated"
+          }
+        }
+      }
+    },
+    "entry.delete": {
+      "extractionState": "manual",
+      "comment": "Destructive action permanently removing a time entry from Solidtime.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete entry"
+          }
+        }
+      }
+    },
+    "entry.deleteHelp": {
+      "extractionState": "manual",
+      "comment": "Confirmation before deleting a completed time entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This permanently deletes the tracked work and removes it from your totals. This cannot be undone."
+          }
+        }
+      }
+    },
+    "entry.deleteRunningHelp": {
+      "extractionState": "manual",
+      "comment": "Confirmation before deleting a running entry. Deletion is distinct from stopping and retaining the entry.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This permanently deletes the running entry and its tracked time. To keep the tracked time, cancel and use Stop instead. This cannot be undone."
+          }
+        }
+      }
+    },
+    "entry.deleteChanged": {
+      "extractionState": "manual",
+      "comment": "Deletion is blocked after the active timer check detects a changed running state.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This entry’s running state changed on Solidtime. Refresh before deleting it."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
