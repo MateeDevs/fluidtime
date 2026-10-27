@@ -56,9 +56,16 @@ extension ReviewPreviewFixtures {
             },
             preview("settings-updates-unavailable", .settings(3)) { $0.generalSettings.updates.status = UpdateStatus()
             },
-            preview("settings-updates-checking", .settings(3)) { $0.generalSettings.updates.status.canCheck = false },
+            preview("settings-updates-checking", .settings(3)) {
+                $0.generalSettings.updates.status = UpdateStatus(
+                    isAvailable: true,
+                    canCheck: false,
+                    automaticallyChecks: true
+                )
+            },
             preview("settings-updates-auto-install", .settings(3)) {
-                $0.generalSettings.updates.status.automaticallyInstalls = true
+                $0.generalSettings.updates.status = UpdateStatus(isAvailable: true, canCheck: true,
+                                                                 automaticallyChecks: true, automaticallyInstalls: true)
             }
         ]
     }
@@ -114,6 +121,10 @@ extension ReviewPreviewFixtures {
                 unlocked(&$0, surface: .settings); $0.earnings.settings?.hourlyRate = -25
                 $0.earnings.error = String(localized: .earningsValidRate)
             }
-        ]
+        ].map { item in
+            var item = item
+            item.state.preferences.workspace.earningsEnabled = true
+            return item
+        }
     }
 }

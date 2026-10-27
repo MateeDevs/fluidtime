@@ -23,7 +23,10 @@ extension AppFeatureTests {
         }
         await store.send(.workspace(.view(.binding(.set(\.tab, tab))))) {
             $0.workspace.tab = tab
-            $0.preferences.workspace.navigation[scope] = WorkspaceNavigation(destination: tab.rawValue)
+            $0.preferences.workspace.navigation[scope] = WorkspaceNavigation(
+                destination: tab.rawValue,
+                showsSidebar: true
+            )
         }
         await store.receive(.earnings(.interface(.conceal(.preview)))) {
             $0.earnings = EarningsFeature.State(accountScope: $0.accountScope)

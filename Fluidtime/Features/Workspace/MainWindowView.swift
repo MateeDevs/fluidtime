@@ -9,16 +9,9 @@ struct MainWindowView: View {
     var body: some View {
         GeometryReader { geometry in
             let isCompact = geometry.size.width < 900
-            content(isCompact: isCompact)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            content(availableWidth: geometry.size.width)
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 .toolbar {
-                    if store.isConnected {
-                        ToolbarItem(placement: .principal) {
-                            WorkspaceNavigationControl(store: store.scope(state: \.workspace, action: \.workspace),
-                                                       isCompact: isCompact)
-                                .disabled(store.isBusy || store.destination != nil)
-                        }
-                    }
                     if isCompact {
                         ToolbarItem { actionsMenu }
                     } else {
@@ -37,24 +30,22 @@ struct MainWindowView: View {
         }
         .confirmationDialog($store.scope(state: \.destination?.deleteEntry, action: \.destination.deleteEntry))
         .focusedValue(\.workspaceStore, store)
-        .frame(minWidth: 320, minHeight: 320)
         .environment(\.calendar, store.user?.calendar ?? .current)
         .environment(\.timeZone, store.user?.calendar.timeZone ?? .current)
     }
 
     @ViewBuilder
-    private func content(isCompact: Bool) -> some View {
+    private func content(availableWidth: CGFloat) -> some View {
         if store.isConnected {
             WorkspaceView(
                 store: store.scope(state: \.workspace, action: \.workspace),
                 earnings: store.scope(state: \.earnings, action: \.earnings),
                 data: store.data,
                 preferences: store.preferences.workspace, scope: store.accountScope,
-                isBusy: store.isBusy || store.destination != nil, isCompact: isCompact
+                isBusy: store.isBusy || store.destination != nil,
+                availableWidth: availableWidth
             ) {
                 timerHeader
-            } footer: {
-                errorBanner
             }
         } else if store.isLoadingAccount {
             AccountLoadingView(showsProgress: store.showsProgress)
@@ -139,6 +130,7 @@ struct MainWindowView: View {
     private var timerHeader: some View {
         VStack(spacing: 0) {
             MainTimerControls(store: store)
+            errorBanner
             if let reminder = store.reminder {
                 HStack {
                     Label(reminder.message, systemImage: "clock.badge.exclamationmark")

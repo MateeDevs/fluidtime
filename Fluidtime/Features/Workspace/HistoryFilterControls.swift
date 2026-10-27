@@ -4,6 +4,7 @@ import SwiftUI
 @ViewAction(for: WorkspaceFeature.self)
 struct HistoryFilterControls: View {
     @Bindable var store: StoreOf<WorkspaceFeature>
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let projects: [Project]
     @FocusState private var isSearchFocused: Bool
 
@@ -58,8 +59,10 @@ struct HistoryFilterControls: View {
                         displayedComponents: .date
                     )
                 }
+                .transition(reduceMotion ? .identity : .opacity)
             }
         }
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: store.history.period == .custom)
         .frame(maxWidth: 720, alignment: .leading)
         .frame(maxWidth: .infinity, alignment: .leading)
         .controlSize(.small)

@@ -86,12 +86,13 @@ struct EntryEditorFeature {
                     return .merge(
                         .run { [client] send in
                             do {
-                                if update.entry.end == nil {
-                                    guard try await client.activeEntry(connection)?.id == update.entry.id else {
-                                        throw AppError.message(String(localized: .editorTimerChanged))
-                                    }
-                                }
+                                let active = try await client.activeEntry(connection)
                                 try Task.checkCancellation()
+                                guard update.entry.end == nil ? active?.id == update.entry.id : active?.id != update
+                                    .entry.id
+                                else {
+                                    throw AppError.message(String(localized: .editorTimerChanged))
+                                }
                                 let entry = try await client.update(connection, update)
                                 try Task.checkCancellation()
                                 await send(.saveResponse(.success(entry)))

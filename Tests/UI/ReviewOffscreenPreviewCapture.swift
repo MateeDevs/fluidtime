@@ -12,10 +12,12 @@ extension ReviewPreviewCapture {
             return
         }
         let view = NSHostingView(rootView: preview.view)
+        view.sizingOptions = []
         let window = ContainedPreviewWindow(
             contentRect: NSRect(origin: .zero, size: preview.size),
             styleMask: [.borderless], backing: .buffered, defer: false
         )
+        window.appearance = NSApplication.shared.appearance
         window.isReleasedWhenClosed = false
         window.contentView = view
         window.setContentSize(preview.size)
@@ -24,7 +26,7 @@ extension ReviewPreviewCapture {
         settle()
         view.layoutSubtreeIfNeeded()
         scroll(preview.scroll, window: window)
-        try #require(!window.isVisible)
+        try #require(!window.isVisible && !window.isKeyWindow && !window.isMainWindow)
         try save(window, preview: preview)
     }
 }

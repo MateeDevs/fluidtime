@@ -33,26 +33,28 @@ struct TimerTrackerView: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .animation(reduceMotion ? .easeOut(duration: 0.12) : .spring(response: 0.25, dampingFraction: 0.9),
-                   value: store.active?.id)
+        .animation(reduceMotion ? nil : .spring(response: 0.25, dampingFraction: 0.9),
+                   value: store.active != nil)
     }
 
     private var stateTransition: AnyTransition {
-        reduceMotion ? .opacity : .opacity.combined(with: .offset(y: 4))
+        reduceMotion ? .identity : .opacity.combined(with: .offset(y: 4))
     }
 }
 
 struct TrackerElapsedTime: View {
     let entry: TimeEntry
+    var isCompact = false
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let value = TrackedTime.clock(entry.elapsed(at: context.date))
             Text(value)
-                .font(.system(.largeTitle, design: .rounded).weight(.medium))
+                .font(.system(isCompact ? .headline : .largeTitle, design: .rounded).weight(.medium))
                 .monospacedDigit()
                 .lineLimit(1)
                 .minimumScaleFactor(0.8)
+                .fixedSize(horizontal: isCompact, vertical: false)
                 .accessibilityLabel(.elapsedTime(value))
         }
         .transaction { $0.animation = nil }

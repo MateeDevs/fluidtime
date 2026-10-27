@@ -1,10 +1,18 @@
 import ComposableArchitecture
 import Foundation
+import SwiftUI
 
 extension WorkspaceFeature {
     @ObservableState
     struct State: Equatable {
         var tab: Tab? = .overview
+        var isTimerCollapsed = false
+        var columnVisibility = NavigationSplitViewVisibility.all
+        var showsSidebar: Bool {
+            get { columnVisibility != .detailOnly }
+            set { columnVisibility = newValue ? .all : .detailOnly }
+        }
+
         var searchFocusRequest = 0
         var history = HistoryFilter()
         var historyPresentation: HistoryPresentation?

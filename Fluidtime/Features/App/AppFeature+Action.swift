@@ -15,6 +15,7 @@ extension AppFeature {
         case showProgress(UUID)
         case syncResponse(UUID, Result<SyncResponse, Failure>)
         case mutationResponse(UUID, Result<MutationResponse, Failure>)
+        case timerShortcutResponse(UUID, Result<MutationResponse, Failure>)
         case timerStopped(UUID, TimeEntry)
         case deleteResponse(UUID, String, Result<Bool, Failure>)
         case disconnectResponse(UUID, Result<Bool, Failure>)

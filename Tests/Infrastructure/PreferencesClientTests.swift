@@ -55,13 +55,13 @@ struct PreferencesClientTests {
         #expect(client.load() == stored)
     }
 
-    @Test func `legacy sidebar preferences preserve the selected view`() throws {
+    @Test func `sidebar preferences preserve selection and visibility`() throws {
         let data = Data(#"{"navigation":{"account":{"destination":"history","showsSidebar":false}}}"#.utf8)
         let preferences = try JSONDecoder().decode(WorkspacePreferences.self, from: data)
-        #expect(preferences.navigation["account"] == WorkspaceNavigation(destination: "history"))
+        #expect(preferences.navigation["account"] == WorkspaceNavigation(destination: "history", showsSidebar: false))
         let encoded = try JSONEncoder().encode(preferences)
         let object = try #require(JSONSerialization.jsonObject(with: encoded) as? [String: Any])
         let navigation = try #require(object["navigation"] as? [String: [String: Any]])
-        #expect(navigation["account"]?["showsSidebar"] == nil)
+        #expect(navigation["account"]?["showsSidebar"] as? Bool == false)
     }
 }

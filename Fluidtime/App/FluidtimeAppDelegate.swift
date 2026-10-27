@@ -12,7 +12,18 @@ final class FluidtimeAppDelegate: NSObject, NSApplicationDelegate {
     private var isLoginItem = false
 
     override init() {
-        store = Store(initialState: AppFeature.State()) { AppFeature() }
+        #if FLUIDTIME_ALPHA
+            do {
+                let alpha = try AlphaEnvironment()
+                store = Store(initialState: AppFeature.State()) { AppFeature() } withDependencies: {
+                    alpha.configure(&$0)
+                }
+            } catch {
+                preconditionFailure("Invalid built-in Alpha configuration: \(error)")
+            }
+        #else
+            store = Store(initialState: AppFeature.State()) { AppFeature() }
+        #endif
         super.init()
     }
 
@@ -24,6 +35,9 @@ final class FluidtimeAppDelegate: NSObject, NSApplicationDelegate {
                 self, selector: #selector(lockEarnings), name: name, object: nil
             )
         }
+        NSWorkspace.shared.notificationCenter.addObserver(
+            self, selector: #selector(refreshAfterWake), name: NSWorkspace.didWakeNotification, object: nil
+        )
         beginStartup()
     }
 
@@ -62,6 +76,10 @@ final class FluidtimeAppDelegate: NSObject, NSApplicationDelegate {
         }
         store.send(.interface(.openPrimaryInterface))
         return true
+    }
+
+    @objc private func refreshAfterWake(_: Notification) {
+        store.send(.refreshRequested(full: true))
     }
 
     @objc private func lockEarnings(_: Notification) {

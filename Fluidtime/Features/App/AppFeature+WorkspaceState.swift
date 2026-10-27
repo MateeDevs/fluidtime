@@ -11,7 +11,7 @@ extension AppFeature.State {
     }
 
     var showsDockIcon: Bool {
-        isSettingsWindowOpen || isMainWindowOpen
+        isSettingsWindowOpen || isMainWindowOpen || isEditorPresented
     }
 }
 

@@ -8,6 +8,15 @@ struct NativeReviewPreviewTests {
     @Test(.enabled(if: ProcessInfo.processInfo.environment["FLUIDTIME_CAPTURE_REVIEW"] == "1"))
     func `capture review matrix`() throws {
         #expect(Bundle.main.bundleIdentifier != "cz.matee.fluidtime")
+        if let language = ProcessInfo.processInfo.environment["FLUIDTIME_PREVIEW_LANGUAGE"] {
+            print("Preview language: \(language), Settings: \(String(localized: .settings))")
+            print("Preferred languages: \(Locale.preferredLanguages), locale: \(Locale.current.identifier)")
+            // A localized host must also declare this language for Foundation-based labels.
+            let expected = ["cs": "Nastavení", "sk": "Nastavenia"][language]
+            if let expected {
+                try #require(String(localized: .settings) == expected)
+            }
+        }
         NSApplication.shared.setActivationPolicy(.accessory)
         let fixtures = try ReviewPreviewFixtures()
         var cases = fixtures.menuCases() + fixtures.overviewCases() + fixtures.historyCases()
@@ -15,6 +24,7 @@ struct NativeReviewPreviewTests {
             + fixtures.menuSettingsCases() + fixtures.generalCases() + fixtures.workspaceSettingsCases()
             + fixtures.rateSettingsCases() + fixtures.labelCases()
         cases += try fixtures.editorCases() + fixtures.feedbackCases()
+        cases += try fixtures.runtimeCases()
         cases += fixtures.stressCases()
         cases += fixtures.navigationCases()
         cases += fixtures.generalBottomCases()

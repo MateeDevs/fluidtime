@@ -4,6 +4,7 @@ import SwiftUI
 @ViewAction(for: WorkspaceFeature.self)
 struct AnalysisPeriodPicker: View {
     @Bindable var store: StoreOf<WorkspaceFeature>
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -32,7 +33,9 @@ struct AnalysisPeriodPicker: View {
                         displayedComponents: .date
                     )
                 }
+                .transition(reduceMotion ? .identity : .opacity)
             }
         }
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: store.analysisPeriod == .custom)
     }
 }

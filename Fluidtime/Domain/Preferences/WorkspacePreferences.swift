@@ -47,4 +47,5 @@ extension WorkspacePreferences {
 
 struct WorkspaceNavigation: Codable, Equatable, Sendable {
     var destination: String
+    var showsSidebar: Bool?
 }

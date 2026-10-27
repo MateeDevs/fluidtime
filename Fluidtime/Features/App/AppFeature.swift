@@ -158,6 +158,8 @@ struct AppFeature {
                 return .none
             case let .mutationResponse(id, result):
                 return handleMutation(id: id, result: result, state: &state)
+            case let .timerShortcutResponse(id, result):
+                return handleMutation(id: id, result: result, state: &state, isShortcut: true)
             case let .showProgress(id):
                 if state.workID == id {
                     state.showsProgress = true
@@ -186,13 +188,17 @@ struct AppFeature {
             case .workspace(.view(.appeared)):
                 if let navigation = state.preferences.workspace.navigation[state.accountScope] {
                     state.workspace.tab = WorkspaceFeature.Tab(rawValue: navigation.destination) ?? .overview
+                    state.workspace.showsSidebar = navigation.showsSidebar ?? true
                 }
                 return .none
             case .workspace(.view(.binding(\.tab))),
+                 .workspace(.view(.binding(\.columnVisibility))),
+                 .workspace(.view(.toggleSidebar)),
                  .workspace(.view(.find)):
                 guard !state.accountScope.isEmpty else { return .none }
                 state.preferences.workspace.navigation[state.accountScope] = WorkspaceNavigation(
-                    destination: (state.workspace.tab ?? .overview).rawValue
+                    destination: (state.workspace.tab ?? .overview).rawValue,
+                    showsSidebar: state.workspace.showsSidebar
                 )
                 return .merge(persistWorkspace(state), concealOverviewEarningsIfNeeded(state))
             case .workspace: return .none

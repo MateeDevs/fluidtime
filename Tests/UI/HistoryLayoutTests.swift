@@ -16,7 +16,7 @@ struct HistoryLayoutTests {
         preview = fixtures.preview("history-narrow", .main) {
             $0.workspace.tab = .history
         }
-        preview.size = NSSize(width: 420, height: 760)
+        preview.size = NSSize(width: 640, height: 760)
         try capture.capture(preview)
         try capture.finish()
     }

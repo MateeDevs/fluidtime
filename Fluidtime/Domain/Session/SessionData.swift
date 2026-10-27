@@ -42,6 +42,12 @@ struct SessionData: Equatable, Sendable {
     }
 
     mutating func apply(_ entry: TimeEntry, at now: Date) {
+        if entry.end == nil {
+            if active?.id != entry.id {
+                lastFullSync = nil
+            }
+            entries.removeAll { $0.end == nil }
+        }
         entries.removeAll { $0.id == entry.id }
         if entry.organizationId == membership?.organization.id {
             entries.append(entry)

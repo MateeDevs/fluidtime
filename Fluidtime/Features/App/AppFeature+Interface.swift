@@ -9,7 +9,6 @@ extension AppFeature {
         case .shutdown:
             return shutdown(&state)
         case .toggleMenuBar:
-            guard state.destination?.editor?.isSaving != true else { return .none }
             state.isMenuBarPresented.toggle()
             return .none
         case .toggleTimer:
@@ -27,11 +26,7 @@ extension AppFeature {
     }
 
     private func handleMenuBarPresentation(_ isPresented: Bool, state: inout State) -> Effect<Action> {
-        guard isPresented || state.destination?.editor?.isSaving != true else { return .none }
         state.isMenuBarPresented = isPresented
-        if !isPresented, state.destination?.editor?.presentationAnchor?.hasPrefix("tracker.panel.") == true {
-            return .run { [system] _ in await system.closeEntryEditor() }
-        }
         return .none
     }
 
@@ -54,8 +49,13 @@ extension AppFeature {
                 ? .send(.earnings(.interface(.conceal(.preview)))) : .none
             return .merge(privacy, .run { [system] _ in await system.setDockIconVisible(showDock) })
         case let .editorPresentationChanged(isOpen):
+            guard state.isEditorPresented != isOpen else { return .none }
             state.isEditorPresented = isOpen
-            return !isOpen && state.destination?.editor != nil ? .send(.destination(.dismiss)) : .none
+            let showDock = state.showsDockIcon
+            return .merge(
+                !isOpen && state.destination?.editor != nil ? .send(.destination(.dismiss)) : .none,
+                .run { [system] _ in await system.setDockIconVisible(showDock) }
+            )
         default: return .none
         }
     }

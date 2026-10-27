@@ -26,7 +26,7 @@ extension AppFeatureTests {
         }
         await store.send(.interface(.toggleTimer)) { $0.workID = self.id }
         await store.receive(.timerStopped(id, saved)) { $0.data.applyStoppedTimer(saved, at: self.date) }
-        await store.receive(.mutationResponse(id, .success(.saved(saved)))) { $0.workID = nil }
+        await store.receive(.timerShortcutResponse(id, .success(.saved(saved)))) { $0.workID = nil }
         await store.finish()
     }
 
@@ -52,7 +52,7 @@ extension AppFeatureTests {
             $0.system.showTimerFeedback = { #expect($0 == .started(created)) }
         }
         await store.send(.interface(.toggleTimer)) { $0.workID = self.id }
-        await store.receive(.mutationResponse(id, .success(.saved(created)))) {
+        await store.receive(.timerShortcutResponse(id, .success(.saved(created)))) {
             $0.workID = nil
             $0.data.apply(created, at: self.date)
         }

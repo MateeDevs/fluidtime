@@ -16,22 +16,25 @@ struct AnalyticsView: View {
             VStack(alignment: .leading, spacing: 12) {
                 AnalysisPeriodPicker(store: store)
                     .padding(.horizontal, 16)
-                if data.lastSynced == nil {
-                    Text(.analyticsUnavailable).foregroundStyle(.secondary).padding(.horizontal, 16)
-                }
                 Group {
-                    switch tab {
-                    case .overview:
-                        OverviewSummaryView(store: store, earnings: earnings, data: data,
-                                            preferences: preferences, analysis: analysis, now: date)
-                    case .analysis:
-                        OverviewTrendsView(store: store, data: data, preferences: preferences,
-                                           analysis: analysis, now: date)
-                    case .daily:
-                        DailyAnalysisTable(days: analysis.days)
-                            .environment(\.timeZone, store.calendar.timeZone)
-                    case .history:
-                        EmptyView()
+                    if data.lastSynced == nil {
+                        ContentUnavailableView {
+                            Label(.analyticsUnavailable, systemImage: "arrow.clockwise")
+                        }
+                    } else {
+                        switch tab {
+                        case .overview:
+                            OverviewSummaryView(store: store, earnings: earnings, data: data,
+                                                preferences: preferences, analysis: analysis, now: date)
+                        case .analysis:
+                            OverviewTrendsView(store: store, data: data, preferences: preferences,
+                                               analysis: analysis, now: date)
+                        case .daily:
+                            DailyAnalysisTable(days: analysis.days)
+                                .environment(\.timeZone, store.calendar.timeZone)
+                        case .history:
+                            EmptyView()
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

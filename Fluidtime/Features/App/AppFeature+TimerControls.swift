@@ -66,15 +66,17 @@ extension AppFeature {
                     )
                 }
                 try Task.checkCancellation()
-                await send(.mutationResponse(id, .success(.saved(result))))
+                await send(.timerShortcutResponse(id, .success(.saved(result))))
             } catch {
                 guard !Task.isCancelled else { return }
-                await send(.mutationResponse(id, .failure(Failure(error))))
+                await send(.timerShortcutResponse(id, .failure(Failure(error))))
             }
         }
     }
 
-    func handleMutation(id: UUID, result: Result<MutationResponse, Failure>, state: inout State) -> Effect<Action> {
+    func handleMutation(
+        id: UUID, result: Result<MutationResponse, Failure>, state: inout State, isShortcut: Bool = false
+    ) -> Effect<Action> {
         guard state.workID == id else { return .none }
         finishWork(&state)
         let feedback: TimerFeedback
@@ -91,7 +93,8 @@ extension AppFeature {
             state.error = error.message
             feedback = .failed
         }
-        let announcement: Effect<Action> = state.preferences.workspace.timerFeedback
+        let announcement: Effect<Action> = state.preferences.workspace
+            .timerFeedback && (isShortcut || feedback == .failed)
             ? .run { [system] _ in await system.showTimerFeedback(feedback) } : .none
         return .merge(.cancel(id: CancelID.progress), announcement)
     }

@@ -4,6 +4,7 @@ import SwiftUI
 @ViewAction(for: AppFeature.self)
 struct TrackerEditingControls: View {
     let store: StoreOf<AppFeature>
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let entry: TimeEntry
     let style: TimerTrackerView.Style
 
@@ -22,9 +23,13 @@ struct TrackerEditingControls: View {
             Button { send(.editTapped(entry, anchor: anchor)) } label: { Image(systemName: "pencil") }
                 .background(EntryEditorAnchorView(id: anchor))
                 .help(.editEntry).accessibilityLabel(.editEntry)
-            Button { send(.pinEntry(entry)) } label: { Image(systemName: isPinned ? "pin.fill" : "pin") }
-                .help(isPinned ? .presetsUnpin : .presetsPin)
-                .accessibilityLabel(isPinned ? .presetsUnpin : .presetsPin)
+            Button { send(.pinEntry(entry)) } label: {
+                Image(systemName: isPinned ? "pin.fill" : "pin")
+                    .contentTransition(reduceMotion ? .identity : .symbolEffect(.replace))
+                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: isPinned)
+            }
+            .help(isPinned ? .presetsUnpin : .presetsPin)
+            .accessibilityLabel(isPinned ? .presetsUnpin : .presetsPin)
         }
         .buttonStyle(.borderless)
         .controlSize(.small)

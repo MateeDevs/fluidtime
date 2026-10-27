@@ -46,7 +46,7 @@ final class ReviewPreviewCapture {
         let chrome: NSWindow.StyleMask = switch preview.screen {
         case .main: [.titled, .closable, .miniaturizable, .resizable]
         case .editor: [.titled, .closable, .miniaturizable]
-        case .settings: [.borderless]
+        case .settings, .settingsContent, .projectVisibility: [.borderless]
         default: [.borderless]
         }
         let window = NSWindow(contentRect: NSRect(origin: .zero, size: preview.size), styleMask: chrome,
@@ -99,7 +99,9 @@ final class ReviewPreviewCapture {
         if usesBitmap {
             let view = try #require(window.contentView)
             let bitmap = try #require(view.bitmapImageRepForCachingDisplay(in: view.bounds))
-            view.cacheDisplay(in: view.bounds, to: bitmap)
+            window.effectiveAppearance.performAsCurrentDrawingAppearance {
+                view.cacheDisplay(in: view.bounds, to: bitmap)
+            }
             let data = try #require(bitmap.representation(using: .png, properties: [:]))
             try data.write(to: URL(fileURLWithPath: path))
         } else {

@@ -7,18 +7,31 @@ struct ReadyTrackerView: View {
     let style: TimerTrackerView.Style
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            TrackerStatus(isRunning: false)
-            if style == .window {
-                ViewThatFits(in: .horizontal) {
-                    HStack(spacing: 16) {
-                        inputs
-                        TrackerPrimaryButton(store: store)
-                    }.frame(minWidth: 560)
-                    compactLayout
-                }
-            } else {
+        if style == .window {
+            windowLayout
+        } else {
+            VStack(alignment: .leading, spacing: 12) {
+                TrackerStatus(isRunning: false)
                 compactLayout
+            }
+        }
+    }
+
+    private var windowLayout: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label(.newTimer, systemImage: "timer").font(.headline)
+            VStack(alignment: .leading, spacing: 6) {
+                Text(.description).font(.caption).foregroundStyle(.secondary)
+                descriptionField
+            }
+            HStack(alignment: .bottom, spacing: 16) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(.project).font(.caption).foregroundStyle(.secondary)
+                    ProjectPicker(projects: store.selectableProjects, selected: $store.projectId,
+                                  currentProject: store.data.projects.first { $0.id == store.projectId },
+                                  showsLabel: false)
+                }
+                TrackerPrimaryButton(store: store, showsFullTitle: true)
             }
         }
     }
@@ -27,16 +40,10 @@ struct ReadyTrackerView: View {
         VStack(alignment: .leading, spacing: 12) {
             descriptionField
             HStack(spacing: 12) {
-                projectPicker
+                ProjectPicker(projects: store.selectableProjects, selected: $store.projectId,
+                              currentProject: store.data.projects.first { $0.id == store.projectId })
                 TrackerPrimaryButton(store: store)
             }
-        }
-    }
-
-    private var inputs: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            descriptionField
-            projectPicker.frame(maxWidth: 300)
         }
     }
 
@@ -44,10 +51,5 @@ struct ReadyTrackerView: View {
         TextField(String(localized: .whatAreYouWorkingOn), text: $store.description)
             .textFieldStyle(.roundedBorder)
             .accessibilityLabel(.description)
-    }
-
-    private var projectPicker: some View {
-        ProjectPicker(projects: store.selectableProjects, selected: $store.projectId,
-                      currentProject: store.data.projects.first { $0.id == store.projectId })
     }
 }

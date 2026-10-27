@@ -17,12 +17,19 @@ struct MenuBarLabelView: View {
             Image(nsImage: presentation.showsActiveIndicator
                 ? MenuBarIcon.active(projectHex: presentation.activeProjectColor, isDark: colorScheme == .dark)
                 : MenuBarIcon.clock)
-            if let text = presentation.text {
-                Text(text)
-                    .monospacedDigit()
-            }
+            #if FLUIDTIME_ALPHA
+                Text(.alphaMenuBarText(presentation.text ?? "")).monospacedDigit()
+            #else
+                if let text = presentation.text {
+                    Text(text).monospacedDigit()
+                }
+            #endif
         }
         .onReceive(ticks) { now = $0 }
-        .accessibilityLabel(presentation.accessibilityLabel)
+        #if FLUIDTIME_ALPHA
+            .accessibilityLabel(.alphaMenuBarAccessibility(presentation.accessibilityLabel))
+        #else
+            .accessibilityLabel(presentation.accessibilityLabel)
+        #endif
     }
 }

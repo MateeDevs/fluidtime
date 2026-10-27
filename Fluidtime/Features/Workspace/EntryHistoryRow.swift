@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct EntryHistoryRow: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let entry: TimeEntry
     let project: Project?
     let isPinned: Bool
@@ -43,9 +44,13 @@ struct EntryHistoryRow: View {
             Button(action: edit) { Image(systemName: "pencil") }
                 .background(EntryEditorAnchorView(id: "history.\(entry.id)"))
                 .help(.editEntry).accessibilityLabel(.editEntry)
-            Button(action: pin) { Image(systemName: isPinned ? "pin.fill" : "pin") }
-                .help(isPinned ? .presetsUnpin : .presetsPin)
-                .accessibilityLabel(isPinned ? .presetsUnpin : .presetsPin)
+            Button(action: pin) {
+                Image(systemName: isPinned ? "pin.fill" : "pin")
+                    .contentTransition(reduceMotion ? .identity : .symbolEffect(.replace))
+                    .animation(reduceMotion ? nil : .easeInOut(duration: 0.18), value: isPinned)
+            }
+            .help(isPinned ? .presetsUnpin : .presetsPin)
+            .accessibilityLabel(isPinned ? .presetsUnpin : .presetsPin)
             Button(action: start) { Image(systemName: "play.fill") }
                 .help(hasActiveTimer ? .stopTheCurrentTimerAndStartANewTimerFor(entry.title) :
                     .startANewTimerFor(entry.title))

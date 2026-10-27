@@ -1,14 +1,122 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "alpha.menuBarText": {
+      "extractionState": "manual",
+      "comment": "Alpha build status item. Preserve the Greek alpha marker. The parameter is the localized duration, or an empty string for icon-only display modes.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "α %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "α %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "α %@"
+          }
+        }
+      }
+    },
+    "alpha.menuBarAccessibility": {
+      "extractionState": "manual",
+      "comment": "Accessibility label identifying the separate Alpha build. The parameter is the existing localized timer or totals status announcement.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha: %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha: %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha: %@"
+          }
+        }
+      }
+    },
+    "alpha.title": {
+      "extractionState": "manual",
+      "comment": "Name of the separate build for fictional data. Keep the Fluidtime product name and Alpha build label.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime Alpha"
+          }
+        }
+      }
+    },
+    "alpha.connectionOnly": {
+      "extractionState": "manual",
+      "comment": "Error in the Alpha mock backend when an address other than the fictional server is entered. Preserve the example URL.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Alpha build only uses https://example.invalid. Real accounts are unavailable in this build."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sestavení Alpha používá jen https://example.invalid. Skutečné účty v něm nejsou dostupné."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zostava Alpha používa iba https://example.invalid. Skutočné účty v nej nie sú dostupné."
+          }
+        }
+      }
+    },
     "updates.openReleases": {
-      "comment": "Opens the project GitHub releases page in the default browser for manual updates. Does not start Sparkle.",
+      "comment": "Opens the Fluidtime GitHub Releases page in the default browser for manual downloads. GitHub is a product name; Releases is the named section of its website. This does not start an in-app update.",
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Open GitHub releases"
+            "value": "Open GitHub Releases"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít vydání na GitHubu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvoriť vydania na GitHube"
           }
         }
       }
@@ -22,6 +130,18 @@
             "state": "translated",
             "value": "Actions"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akce"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akcie"
+          }
         }
       }
     },
@@ -34,6 +154,18 @@
             "state": "translated",
             "value": "About %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O položce %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O položke %@"
+          }
         }
       }
     },
@@ -44,7 +176,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Work time adds your tracked intervals. Overlapping entries count only once. Lunch and other gaps are not included."
+            "value": "Work time totals your tracked entries. Overlapping time counts once. Gaps, including lunch, aren't included."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas je součtem zaznamenané práce. Překrývající se čas se počítá jen jednou. Mezery včetně oběda se nezapočítávají."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas je súčtom zaznamenanej práce. Prekrývajúci sa čas sa počíta iba raz. Medzery vrátane obeda sa nezapočítavajú."
           }
         }
       }
@@ -56,19 +200,43 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Other gaps are time between tracked entries, excluding the estimated lunch gap. They do not count as tracked work."
+            "value": "Other gaps are time between entries outside the estimated lunch gap. They don't count as work time."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní mezery jsou čas mezi záznamy mimo odhadovanou přestávku na oběd. Do odpracovaného času se nezapočítávají."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatné medzery sú čas medzi záznamami mimo odhadovanej prestávky na obed. Do odpracovaného času sa nezapočítavajú."
           }
         }
       }
     },
     "workspace.navigation": {
-      "comment": "Accessibility label for the main window toolbar view switcher.",
+      "comment": "Accessibility label for workspace navigation. View is a noun meaning a destination in the main window.",
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "View"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazenie"
           }
         }
       }
@@ -82,6 +250,18 @@
             "state": "translated",
             "value": "Use project color for the active dot"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Použít barvu projektu pro bod aktivního časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Použiť farbu projektu pre bod aktívneho časovača"
+          }
         }
       }
     },
@@ -92,7 +272,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Previous month to date"
+            "value": "Same period last month"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stejné období minulého měsíce"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rovnaké obdobie minulého mesiaca"
           }
         }
       }
@@ -106,6 +298,18 @@
             "state": "translated",
             "value": "Solidtime website"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Web Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Web Solidtime"
+          }
         }
       }
     },
@@ -118,6 +322,18 @@
             "state": "translated",
             "value": "Quit"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukončit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukončiť"
+          }
         }
       }
     },
@@ -128,7 +344,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose visible projects…"
+            "value": "Choose visible projects"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrat viditelné projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrať viditeľné projekty"
           }
         }
       }
@@ -142,6 +370,18 @@
             "state": "translated",
             "value": "Done"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hotovo"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hotovo"
+          }
         }
       }
     },
@@ -153,6 +393,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enable earnings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnout výdělky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnúť zárobky"
           }
         }
       }
@@ -166,6 +418,18 @@
             "state": "translated",
             "value": "Show a private earnings estimate in Overview. Touch ID is required to view earnings or edit your hourly rate."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazí soukromý odhad výdělku v přehledu. Pro zobrazení výdělku nebo úpravu hodinové sazby je potřeba Touch ID."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazí súkromný odhad zárobku v prehľade. Na zobrazenie zárobku alebo úpravu hodinovej sadzby je potrebné Touch ID."
+          }
         }
       }
     },
@@ -177,6 +441,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Select all projects"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrat všechny projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrať všetky projekty"
           }
         }
       }
@@ -190,6 +466,18 @@
             "state": "translated",
             "value": "Deselect all projects"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušit výběr všech projektů"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušiť výber všetkých projektov"
+          }
         }
       }
     },
@@ -202,6 +490,18 @@
             "state": "translated",
             "value": "Visible projects"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viditelné projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viditeľné projekty"
+          }
         }
       }
     },
@@ -212,7 +512,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose which projects appear when you start or edit a timer."
+            "value": "Choose which projects appear when you start or edit a time entry"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte projekty, které se zobrazí při zahájení nebo úpravě časového záznamu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte projekty, ktoré sa zobrazia pri začatí alebo úprave časového záznamu"
           }
         }
       }
@@ -224,7 +536,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "No projects are available in this organization."
+            "value": "No projects are available in this organization"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V této organizaci nejsou k dispozici žádné projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V tejto organizácii nie sú k dispozícii žiadne projekty"
           }
         }
       }
@@ -236,6 +560,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "API key"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč API"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kľúč API"
           }
         }
       },
@@ -250,6 +586,18 @@
             "state": "translated",
             "value": "Account"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet"
+          }
         }
       }
     },
@@ -262,6 +610,18 @@
             "state": "translated",
             "value": "Timer status dot"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bod stavu časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bod stavu časovača"
+          }
         }
       }
     },
@@ -272,6 +632,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cancel"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušiť"
           }
         }
       }
@@ -284,17 +656,41 @@
             "state": "translated",
             "value": "Choose an available project before saving"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Před uložením vyberte dostupný projekt"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pred uložením vyberte dostupný projekt"
+          }
         }
       }
     },
     "Clock only": {
       "extractionState": "manual",
-      "comment": "Menu bar display option showing only the clock icon.",
+      "comment": "Menu bar display option showing the clock icon without a duration. A dot is added while a timer is running.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Clock only"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pouze hodiny"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iba hodiny"
           }
         }
       }
@@ -307,6 +703,18 @@
             "state": "translated",
             "value": "Connect"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojiť"
+          }
         }
       }
     },
@@ -318,6 +726,18 @@
             "state": "translated",
             "value": "Connect to Solidtime"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojit k Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojiť k Solidtime"
+          }
         }
       }
     },
@@ -328,6 +748,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connect your Solidtime account to track time from the menu bar"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojte účet Solidtime a sledujte čas z řádku nabídek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojte účet Solidtime a sledujte čas z lišty"
           }
         }
       }
@@ -341,6 +773,18 @@
             "state": "translated",
             "value": "Connect your account in the Account tab to choose an organization"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nejprve připojte účet na panelu Účet a pak vyberte organizaci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najprv pripojte účet na paneli Účet a potom vyberte organizáciu"
+          }
         }
       }
     },
@@ -351,6 +795,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Connected as %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připojený účet: %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripojený účet: %@"
           }
         }
       },
@@ -364,6 +820,18 @@
             "state": "translated",
             "value": "Couldn't load all your time entries. Refresh and try again."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se načíst všechny časové záznamy. Obnovte je a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa načítať všetky časové záznamy. Obnovte ich a skúste to znova."
+          }
         }
       },
       "comment": "An incomplete response prevented loading all entries. Existing data is retained; Refresh entries performs another read."
@@ -375,6 +843,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't read the Solidtime data. Refresh and try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se přečíst data ze Solidtime. Obnovte je a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa prečítať údaje zo Solidtime. Obnovte ich a skúste to znova."
           }
         }
       },
@@ -388,6 +868,18 @@
             "state": "translated",
             "value": "Couldn't access your saved API key. Enter it again in Account settings."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se získat uložený klíč API. Zadejte ho znovu v nastavení účtu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa získať uložený kľúč API. Zadajte ho znova v nastaveniach účtu."
+          }
         }
       },
       "comment": "The saved credential could not be accessed. The user can enter the API key again in the Account tab of Settings."
@@ -399,6 +891,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't remove your saved API key. Try disconnecting again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se odstranit uložený klíč API. Zkuste účet odpojit znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa odstrániť uložený kľúč API. Skúste účet odpojiť znova."
           }
         }
       },
@@ -412,6 +916,18 @@
             "state": "translated",
             "value": "Couldn't save your API key on this Mac. Try connecting again."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se uložit klíč API na tomto Macu. Zkuste se připojit znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa uložiť kľúč API na tomto Macu. Skúste sa pripojiť znova."
+          }
         }
       },
       "comment": "The API key could not be saved locally during connection. Connecting again retries credential storage."
@@ -423,6 +939,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't update your saved API key. Try connecting again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodařilo se aktualizovat uložený klíč API. Zkuste se připojit znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nepodarilo sa aktualizovať uložený kľúč API. Skúste sa pripojiť znova."
           }
         }
       },
@@ -436,6 +964,18 @@
             "state": "translated",
             "value": "Create an API key in your Solidtime account settings. Fluidtime stores it in Keychain on this Mac."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvořte klíč API v nastavení účtu Solidtime. Fluidtime ho uloží do Klíčenky na tomto Macu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vytvorte kľúč API v nastaveniach účtu Solidtime. Fluidtime ho uloží do Kľúčenky na tomto Macu."
+          }
         }
       },
       "comment": "Account settings help. API means application programming interface. Solidtime is the service name. Keychain is the macOS credential store; use the platform's localized term for it."
@@ -448,6 +988,18 @@
             "state": "translated",
             "value": "Description"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popis"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popis"
+          }
         }
       }
     },
@@ -459,6 +1011,18 @@
             "state": "translated",
             "value": "Disconnect"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpojit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpojiť"
+          }
         }
       }
     },
@@ -469,6 +1033,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Disconnect from Solidtime?"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpojit od Solidtime?"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpojiť od Solidtime?"
           }
         }
       }
@@ -482,6 +1058,18 @@
             "state": "translated",
             "value": "Display"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazenie"
+          }
         }
       }
     },
@@ -492,6 +1080,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Edit entry"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upravit záznam"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upraviť záznam"
           }
         }
       }
@@ -504,6 +1104,18 @@
             "state": "translated",
             "value": "Edit time entry"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upravit časový záznam"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upraviť časový záznam"
+          }
         }
       }
     },
@@ -514,6 +1126,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Elapsed time %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uplynulý čas %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uplynutý čas %@"
           }
         }
       },
@@ -527,6 +1151,18 @@
             "state": "translated",
             "value": "Enter a valid Solidtime address"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte platnou adresu Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadajte platnú adresu Solidtime"
+          }
         }
       },
       "comment": "Validation error for an invalid Solidtime web address. The address field is in the Account tab of Settings."
@@ -538,6 +1174,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enter a valid Solidtime address, such as https://app.solidtime.io"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte platnou adresu Solidtime, například https://app.solidtime.io"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadajte platnú adresu Solidtime, napríklad https://app.solidtime.io"
           }
         }
       },
@@ -551,6 +1199,18 @@
             "state": "translated",
             "value": "Enter your API key"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte klíč API"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadajte kľúč API"
+          }
         }
       },
       "comment": "Placeholder and validation message for the required API key field. API is the standard Solidtime credential term."
@@ -559,6 +1219,18 @@
       "extractionState": "manual",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime"
+          }
+        },
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Fluidtime"
@@ -574,6 +1246,18 @@
             "state": "translated",
             "value": "Fluidtime keeps running when you close this window"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime zůstane spuštěný i po zavření tohoto okna"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime zostane spustený aj po zatvorení tohto okna"
+          }
         }
       }
     },
@@ -585,6 +1269,18 @@
             "state": "translated",
             "value": "Fluidtime, no timer running"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, žádný časovač neběží"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, žiadny časovač nebeží"
+          }
         }
       }
     },
@@ -595,6 +1291,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fluidtime, timer running"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač běží"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač beží"
           }
         }
       }
@@ -608,6 +1316,18 @@
             "state": "translated",
             "value": "Fluidtime, timer running, %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač běží, %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač beží, %@"
+          }
         }
       }
     },
@@ -619,6 +1339,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fluidtime, this week's total %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, tento týden celkem %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, tento týždeň celkovo %@"
           }
         }
       }
@@ -632,6 +1364,18 @@
             "state": "translated",
             "value": "Fluidtime, today's total %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, dnes celkem %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, dnes celkovo %@"
+          }
         }
       }
     },
@@ -642,6 +1386,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Solidtime address"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresa Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresa Solidtime"
           }
         }
       },
@@ -655,6 +1411,18 @@
             "state": "translated",
             "value": "Create or join an organization on Solidtime to start tracking time"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nejprve v Solidtime vytvořte organizaci nebo se k nějaké připojte"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najprv v Solidtime vytvorte organizáciu alebo sa k nejakej pripojte"
+          }
         }
       },
       "comment": "Shown when the connected account has no organization memberships. Creating or joining an organization happens on the Solidtime website."
@@ -665,11 +1433,23 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Use 5,000 characters or fewer"
+            "value": "Use 5,000 characters or fewer in the description"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popis může mít nejvýše 5 000 znaků"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popis môže mať najviac 5 000 znakov"
           }
         }
       },
-      "comment": "Validation error when an entry description exceeds 5,000 characters. Exactly 5,000 characters are allowed."
+      "comment": "Entry description validation. Exactly 5,000 characters are allowed; use locale-appropriate number grouping."
     },
     "Keyboard shortcut": {
       "extractionState": "manual",
@@ -679,6 +1459,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Keyboard shortcut"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klávesové zkratky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klávesové skratky"
           }
         }
       }
@@ -691,6 +1483,18 @@
             "state": "translated",
             "value": "Menu bar"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Řádek nabídek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lišta"
+          }
         }
       }
     },
@@ -702,6 +1506,18 @@
             "state": "translated",
             "value": "New timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nový časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nový časovač"
+          }
         }
       }
     },
@@ -712,6 +1528,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "No description"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez popisu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez popisu"
           }
         }
       },
@@ -725,18 +1553,42 @@
             "state": "translated",
             "value": "No project"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez projektu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bez projektu"
+          }
         }
       },
       "comment": "Picker option and entry label indicating that no project is assigned."
     },
     "Show or hide Fluidtime": {
       "extractionState": "manual",
-      "comment": "Global shortcut recorder label. Toggles the menu in menu bar modes or opens the main app window in window-only mode.",
+      "comment": "Global shortcut recorder label. Always opens or closes the Fluidtime menu bar panel, including while another app is active. There is no window-only mode.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Open Fluidtime"
+            "value": "Show or hide menu"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit nebo skrýt nabídku"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť alebo skryť menu"
           }
         }
       }
@@ -748,7 +1600,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Toggle the menu from another app"
+            "value": "Show or hide the menu even when another app is active"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazí nebo skryje nabídku, i když je aktivní jiná aplikace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazí alebo skryje menu, aj keď je aktívna iná apka"
           }
         }
       }
@@ -761,6 +1625,18 @@
             "state": "translated",
             "value": "Open Solidtime"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvoriť Solidtime"
+          }
         }
       }
     },
@@ -771,6 +1647,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Organization"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organizace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Organizácia"
           }
         }
       }
@@ -783,6 +1671,18 @@
             "state": "translated",
             "value": "Project"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt"
+          }
         }
       }
     },
@@ -793,6 +1693,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Quit Fluidtime"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukončit Fluidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukončiť Fluidtime"
           }
         }
       },
@@ -806,6 +1718,18 @@
             "state": "translated",
             "value": "Recent entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedávné záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedávne záznamy"
+          }
         }
       }
     },
@@ -817,18 +1741,42 @@
             "state": "translated",
             "value": "Refresh entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnoviť záznamy"
+          }
         }
       },
       "comment": "Tooltip, accessibility label, and error-recovery button label. This action reads the latest entries; it does not retry a failed write."
     },
     "Restore default": {
       "extractionState": "manual",
-      "comment": "Button resetting the global keyboard shortcut to Control Option Shift Command F.",
+      "comment": "Button resetting both global keyboard shortcuts: Control Option Shift Command F for the menu and Control Option Shift Command T for the timer. Preserve macOS modifier names using the platform terminology.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Restore default"
+            "value": "Restore default shortcuts"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit výchozí zkratky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnoviť predvolené skratky"
           }
         }
       }
@@ -842,6 +1790,18 @@
             "state": "translated",
             "value": "Timer duration"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doba běhu časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trvanie časovača"
+          }
         }
       }
     },
@@ -853,6 +1813,18 @@
             "state": "translated",
             "value": "Save changes"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložit změny"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložiť zmeny"
+          }
         }
       }
     },
@@ -863,6 +1835,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Settings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavenia"
           }
         }
       }
@@ -876,6 +1860,18 @@
             "state": "translated",
             "value": "Show seconds"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat sekundy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovať sekundy"
+          }
         }
       }
     },
@@ -887,6 +1883,18 @@
             "state": "translated",
             "value": "Solidtime account"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet Solidtime"
+          }
         }
       }
     },
@@ -897,6 +1905,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Solidtime couldn't complete this action. Try again in a moment."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime nemohl dokončit tuto akci. Zkuste to za chvíli znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solidtime nemohol dokončiť túto akciu. Skúste to o chvíľu znova."
           }
         }
       },
@@ -910,6 +1930,18 @@
             "state": "translated",
             "value": "Couldn't save the entry. Refresh, then check your timer and project."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam se nepodařilo uložit. Obnovte záznamy a zkontrolujte časovač a projekt."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam sa nepodarilo uložiť. Obnovte záznamy a skontrolujte časovač a projekt."
+          }
         }
       },
       "comment": "An entry write failed validation or conflicted with server state. Refresh before checking the timer and project; no write is retried automatically."
@@ -921,6 +1953,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't load your time entries. Refresh and try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové záznamy se nepodařilo načíst. Obnovte je a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové záznamy sa nepodarilo načítať. Obnovte ich a skúste to znova."
           }
         }
       },
@@ -934,6 +1978,18 @@
             "state": "translated",
             "value": "Start a new timer for %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit nový časovač pro %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustiť nový časovač pre %@"
+          }
         }
       },
       "comment": "Tooltip and accessibility label for a recent-entry play button with no current timer. The placeholder is the entry description or localized No description fallback. A new entry is created; the completed entry is not resumed or edited."
@@ -946,6 +2002,18 @@
             "state": "translated",
             "value": "Start timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustiť časovač"
+          }
         }
       }
     },
@@ -957,6 +2025,18 @@
             "state": "translated",
             "value": "Stop timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastavit časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastaviť časovač"
+          }
         }
       }
     },
@@ -967,6 +2047,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "This entry isn't available for your account. Refresh and try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento záznam není dostupný pro váš účet. Obnovte záznamy a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento záznam nie je dostupný pre váš účet. Obnovte záznamy a skúste to znova."
           }
         }
       },
@@ -980,6 +2072,18 @@
             "state": "translated",
             "value": "Couldn't read the data from Solidtime. Check your Solidtime address in Account settings."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data ze Solidtime se nepodařilo přečíst. Zkontrolujte adresu Solidtime v nastavení účtu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Údaje zo Solidtime sa nepodarilo prečítať. Skontrolujte adresu Solidtime v nastaveniach účtu."
+          }
         }
       },
       "comment": "The returned data could not be decoded as Solidtime data. Direct the user to the Solidtime address field in Account settings, without exposing API implementation details."
@@ -991,6 +2095,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't find this item. Refresh and try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Položka se nenašla. Obnovte záznamy a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Položka sa nenašla. Obnovte záznamy a skúste to znova."
           }
         }
       },
@@ -1004,6 +2120,18 @@
             "state": "translated",
             "value": "This week"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týden"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týždeň"
+          }
         }
       }
     },
@@ -1016,6 +2144,18 @@
             "state": "translated",
             "value": "This week's total"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týden celkem"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týždeň celkovo"
+          }
         }
       }
     },
@@ -1026,6 +2166,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Time preferences"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení času"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavenia času"
           }
         }
       },
@@ -1039,6 +2191,18 @@
             "state": "translated",
             "value": "Time zone"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové pásmo"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové pásmo"
+          }
         }
       },
       "comment": "Read-only account preference label. The value is a time zone identifier supplied by Solidtime."
@@ -1051,6 +2215,18 @@
             "state": "translated",
             "value": "Timer running"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač běží"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač beží"
+          }
         }
       }
     },
@@ -1061,6 +2237,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Today"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes"
           }
         }
       }
@@ -1074,6 +2262,18 @@
             "state": "translated",
             "value": "Today's total"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes celkem"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes celkovo"
+          }
         }
       }
     },
@@ -1086,6 +2286,18 @@
             "state": "translated",
             "value": "Totals include your running timer in the selected organization"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Součty zahrnují běžící časovač ve vybrané organizaci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Súčty zahŕňajú bežiaci časovač vo vybranej organizácii"
+          }
         }
       }
     },
@@ -1096,6 +2308,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Too many requests. Wait a moment, then try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příliš mnoho požadavků. Chvíli počkejte a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Príliš veľa požiadaviek. Chvíľu počkajte a skúste to znova."
           }
         }
       }
@@ -1109,6 +2333,18 @@
             "state": "translated",
             "value": "Change your time zone and week start in your Solidtime account settings"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové pásmo a začátek týdne můžete změnit v nastavení účtu Solidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové pásmo a začiatok týždňa môžete zmeniť v nastaveniach účtu Solidtime"
+          }
         }
       }
     },
@@ -1119,6 +2355,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Track time from your menu bar"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledujte čas z řádku nabídek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledujte čas z lišty"
           }
         }
       }
@@ -1132,6 +2380,18 @@
             "state": "translated",
             "value": "Track time in"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledovat čas v organizaci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledovať čas v organizácii"
+          }
         }
       }
     },
@@ -1144,6 +2404,18 @@
             "state": "translated",
             "value": "Tracking"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledování"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledovanie"
+          }
         }
       }
     },
@@ -1154,6 +2426,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Unavailable project"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedostupný projekt"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedostupný projekt"
           }
         }
       },
@@ -1167,6 +2451,18 @@
             "state": "translated",
             "value": "Update connection"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizovat připojení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizovať pripojenie"
+          }
         }
       }
     },
@@ -1176,7 +2472,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Updating Solidtime"
+            "value": "Updating time entries"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizace časových záznamů"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizácia časových záznamov"
           }
         }
       }
@@ -1188,6 +2496,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Start the address with https:// to protect your API key"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresa musí začínat na https://, aby byl klíč API chráněný"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresa musí začínať na https://, aby bol kľúč API chránený"
           }
         }
       },
@@ -1201,6 +2521,18 @@
             "state": "translated",
             "value": "Week starts on"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začátek týdne"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začiatok týždňa"
+          }
         }
       },
       "comment": "Read-only account preference label. The value is a localized weekday name."
@@ -1213,6 +2545,18 @@
             "state": "translated",
             "value": "What are you working on?"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na čem pracujete?"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na čom pracujete?"
+          }
         }
       }
     },
@@ -1223,6 +2567,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "A timer is already running. Stop it before starting another."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač už běží. Před spuštěním dalšího ho zastavte."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač už beží. Pred spustením ďalšieho ho zastavte."
           }
         }
       },
@@ -1236,6 +2592,18 @@
             "state": "translated",
             "value": "You don't have permission for this action. Check your access on Solidtime."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K této akci nemáte oprávnění. Zkontrolujte svůj přístup v Solidtime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na túto akciu nemáte oprávnenie. Skontrolujte svoj prístup v Solidtime."
+          }
         }
       },
       "comment": "Authorization error; access may depend on the credential or organization role. Do not blame the user or imply that retrying grants access."
@@ -1247,6 +2615,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Your API key wasn't accepted. Enter a valid key in Account settings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klíč API nebyl přijat. Zadejte platný klíč v nastavení účtu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kľúč API nebol prijatý. Zadajte platný kľúč v nastaveniach účtu."
           }
         }
       },
@@ -1260,6 +2640,18 @@
             "state": "translated",
             "value": "Your saved API key will be removed from this Mac. Any running timer will continue on Solidtime."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložený klíč API bude z tohoto Macu odstraněn. Běžící časovač bude v Solidtime pokračovat."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložený kľúč API bude z tohto Macu odstránený. Bežiaci časovač bude v Solidtime pokračovať."
+          }
         }
       },
       "comment": "Disconnect confirmation body. Only the local saved credential is removed; a server-side running timer continues."
@@ -1271,6 +2663,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stop a timer to see the entry here"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam se zde zobrazí po zastavení časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam sa tu zobrazí po zastavení časovača"
           }
         }
       },
@@ -1284,6 +2688,18 @@
             "state": "translated",
             "value": "Recent entries aren't available yet"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedávné záznamy zatím nejsou k dispozici"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedávne záznamy zatiaľ nie sú k dispozícii"
+          }
         }
       },
       "comment": "Placeholder while recent-entry data is not yet available. Do not imply the account has no completed entries."
@@ -1295,6 +2711,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Your running timer changed on Solidtime. Refresh your entries before stopping it."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Běžící časovač se v Solidtime změnil. Před zastavením obnovte záznamy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bežiaci časovač sa v Solidtime zmenil. Pred zastavením obnovte záznamy."
           }
         }
       },
@@ -1308,6 +2736,18 @@
             "state": "translated",
             "value": "Your timer is running in another organization. Choose that organization in Tracking settings to edit the entry."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač běží v jiné organizaci. Pro úpravu záznamu vyberte tuto organizaci v nastavení sledování času."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač beží v inej organizácii. Na úpravu záznamu vyberte túto organizáciu v nastaveniach sledovania času."
+          }
         }
       },
       "comment": "The running timer belongs to another organization. Tracking settings means the Tracking tab of Fluidtime Settings, which contains the organization picker. The panel still offers Stop timer."
@@ -1319,6 +2759,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Work totals include the running timer in the selected organization. They use your Solidtime time zone and week start."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Součty práce zahrnují běžící časovač ve vybrané organizaci. Používají vaše časové pásmo a začátek týdne ze Solidtime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Súčty práce zahŕňajú bežiaci časovač vo vybranej organizácii. Používajú vaše časové pásmo a začiatok týždňa zo Solidtime."
           }
         }
       },
@@ -1332,6 +2784,18 @@
             "state": "translated",
             "value": "—"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "—"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "—"
+          }
         }
       },
       "comment": "Shown in place of a duration before the first successful synchronization."
@@ -1340,6 +2804,18 @@
       "extractionState": "manual",
       "localizations": {
         "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "https://app.solidtime.io"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "https://app.solidtime.io"
+          }
+        },
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "https://app.solidtime.io"
@@ -1357,6 +2833,18 @@
             "state": "translated",
             "value": "Stop the current timer and start a new timer for %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastavit aktuální časovač a spustit nový pro %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastaviť aktuálny časovač a spustiť nový pre %@"
+          }
         }
       }
     },
@@ -1368,6 +2856,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "General"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obecné"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všeobecné"
           }
         }
       }
@@ -1381,6 +2881,18 @@
             "state": "translated",
             "value": "Startup"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouštění"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spúšťanie"
+          }
         }
       }
     },
@@ -1392,6 +2904,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Launch at login"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouštět při přihlášení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spúšťať pri prihlásení"
           }
         }
       }
@@ -1405,6 +2929,18 @@
             "state": "translated",
             "value": "Open Fluidtime automatically when you log in to your Mac"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky otevřít Fluidtime po přihlášení k Macu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky otvoriť Fluidtime po prihlásení do Macu"
+          }
         }
       }
     },
@@ -1416,6 +2952,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Launch at login needs your approval. Allow Fluidtime in Login Items settings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouštění při přihlášení vyžaduje schválení. Povolte Fluidtime v nastavení přihlašovacích položek."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spúšťanie pri prihlásení vyžaduje schválenie. Povoľte Fluidtime v nastaveniach prihlasovacích položiek."
           }
         }
       }
@@ -1429,6 +2977,18 @@
             "state": "translated",
             "value": "Open Login Items settings"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít přihlašovací položky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvoriť prihlasovacie položky"
+          }
         }
       }
     },
@@ -1440,6 +3000,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Launch at login isn't available"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouštění při přihlášení není k dispozici"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spúšťanie pri prihlásení nie je k dispozícii"
           }
         }
       }
@@ -1453,6 +3025,18 @@
             "state": "translated",
             "value": "Couldn't change launch at login. Try again."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spouštění při přihlášení se nepodařilo změnit. Zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spúšťanie pri prihlásení sa nepodarilo zmeniť. Skúste to znova."
+          }
         }
       }
     },
@@ -1464,6 +3048,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Updating launch at login"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizace spouštění při přihlášení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizácia spúšťania pri prihlásení"
           }
         }
       }
@@ -1477,6 +3073,18 @@
             "state": "translated",
             "value": "Any running timer will continue on Solidtime"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Běžící časovač bude v Solidtime pokračovat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bežiaci časovač bude v Solidtime pokračovať"
+          }
         }
       }
     },
@@ -1488,6 +3096,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Overview"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přehled"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prehľad"
           }
         }
       }
@@ -1501,6 +3121,18 @@
             "state": "translated",
             "value": "Time entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časové záznamy"
+          }
         }
       }
     },
@@ -1512,6 +3144,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Earnings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výdělky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zárobky"
           }
         }
       }
@@ -1525,6 +3169,18 @@
             "state": "translated",
             "value": "Show main window"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit hlavní okno"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť hlavné okno"
+          }
         }
       }
     },
@@ -1536,6 +3192,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Workspace"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prostředí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prostredie"
           }
         }
       }
@@ -1549,6 +3217,18 @@
             "state": "translated",
             "value": "This month"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento měsíc"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento mesiac"
+          }
         }
       }
     },
@@ -1560,6 +3240,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Last month"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minulý měsíc"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minulý mesiac"
           }
         }
       }
@@ -1573,6 +3265,18 @@
             "state": "translated",
             "value": "Last 30 days"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posledních 30 dní"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posledných 30 dní"
+          }
         }
       }
     },
@@ -1584,6 +3288,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Last 90 days"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posledních 90 dní"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posledných 90 dní"
           }
         }
       }
@@ -1597,6 +3313,18 @@
             "state": "translated",
             "value": "This year"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento rok"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento rok"
+          }
         }
       }
     },
@@ -1608,6 +3336,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Custom dates"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vlastní období"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vlastné obdobie"
           }
         }
       }
@@ -1621,6 +3361,18 @@
             "state": "translated",
             "value": "Days with entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dny se záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dni so záznamami"
+          }
         }
       }
     },
@@ -1632,6 +3384,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Weekdays"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovní dny"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovné dni"
           }
         }
       }
@@ -1645,6 +3409,18 @@
             "state": "translated",
             "value": "All calendar days"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všechny kalendářní dny"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všetky kalendárne dni"
+          }
         }
       }
     },
@@ -1656,6 +3432,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Work time"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas"
           }
         }
       }
@@ -1669,6 +3457,18 @@
             "state": "translated",
             "value": "Time at work"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci"
+          }
         }
       }
     },
@@ -1680,6 +3480,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Other gaps"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní mezery"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatné medzery"
           }
         }
       }
@@ -1693,41 +3505,89 @@
             "state": "translated",
             "value": "Time at work spans the first work entry start to the last work entry end each day, or now while work is running. It includes lunch and other gaps."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci je doba od začátku prvního do konce posledního záznamu v daném dni. U běžícího časovače se počítá do současnosti. Zahrnuje oběd i ostatní mezery."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci je doba od začiatku prvého do konca posledného záznamu v danom dni. Pri bežiacom časovači sa počíta do súčasnosti. Zahŕňa obed aj ostatné medzery."
+          }
         }
       }
     },
     "analytics.todayWork": {
       "extractionState": "manual",
-      "comment": "Work time today, excluding unpaid breaks.",
+      "comment": "Tracked work duration today, excluding gaps. No employee pay eligibility is inferred.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Today's work"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes odpracováno"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnes odpracované"
+          }
         }
       }
     },
     "analytics.weekWork": {
       "extractionState": "manual",
-      "comment": "Work time for the Solidtime user calendar week, excluding unpaid breaks.",
+      "comment": "Tracked work duration for the Solidtime account calendar week, excluding gaps. No employee pay eligibility is inferred.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "This week's work"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týden odpracováno"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento týždeň odpracované"
+          }
         }
       }
     },
     "analytics.monthWork": {
       "extractionState": "manual",
-      "comment": "Work time for the current calendar month, excluding unpaid breaks.",
+      "comment": "Tracked work duration for the current account calendar month, excluding gaps. No employee pay eligibility is inferred.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "This month's work"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento měsíc odpracováno"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento mesiac odpracované"
           }
         }
       }
@@ -1741,6 +3601,18 @@
             "state": "translated",
             "value": "Time at work today"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnešní čas v práci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dnešný čas v práci"
+          }
         }
       }
     },
@@ -1751,7 +3623,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Average day includes"
+            "value": "Days included in daily averages"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dny zahrnuté do denních průměrů"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dni zahrnuté do denných priemerov"
           }
         }
       }
@@ -1763,7 +3647,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Average workday"
+            "value": "Average per day"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní průměr"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denný priemer"
           }
         }
       }
@@ -1777,6 +3673,18 @@
             "state": "translated",
             "value": "Average per week"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týdenní průměr"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týždenný priemer"
+          }
         }
       }
     },
@@ -1788,6 +3696,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Average per month"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měsíční průměr"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesačný priemer"
           }
         }
       }
@@ -1801,6 +3721,18 @@
             "state": "translated",
             "value": "Averages"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Průměry"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priemery"
+          }
         }
       }
     },
@@ -1812,6 +3744,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Daily averages use your selected days. Weekly and monthly averages include partial calendar periods."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní průměry vycházejí z vybraných dnů. Týdenní a měsíční průměry zahrnují i neúplná kalendářní období."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denné priemery vychádzajú z vybraných dní. Týždenné a mesačné priemery zahŕňajú aj neúplné kalendárne obdobia."
           }
         }
       }
@@ -1825,6 +3769,18 @@
             "state": "translated",
             "value": "Previous period work"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práce v předchozím období"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práca v predchádzajúcom období"
+          }
         }
       }
     },
@@ -1837,6 +3793,18 @@
             "state": "translated",
             "value": "Change from previous period"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změna oproti předchozímu období"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmena oproti predchádzajúcemu obdobiu"
+          }
         }
       }
     },
@@ -1847,7 +3815,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "The previous total covers the same elapsed length of time in the preceding period. For a current period, this cutoff advances with time. Percentage change is unavailable when the previous total is zero."
+            "value": "The previous total covers the same amount of time in the preceding period. For the current period, the comparison updates as time passes. Percentage change isn't available when the previous total is zero."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Předchozí součet zahrnuje stejně dlouhou část předchozího období. U aktuálního období se srovnání průběžně posouvá. Procentní změna není k dispozici, pokud je předchozí součet nulový."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Predchádzajúci súčet zahŕňa rovnako dlhú časť predchádzajúceho obdobia. Pri aktuálnom období sa porovnanie priebežne posúva. Percentuálna zmena nie je k dispozícii, ak je predchádzajúci súčet nulový."
           }
         }
       }
@@ -1861,6 +3841,18 @@
             "state": "translated",
             "value": "Day"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deň"
+          }
         }
       }
     },
@@ -1872,6 +3864,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hours"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodiny"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodiny"
           }
         }
       }
@@ -1885,6 +3889,18 @@
             "state": "translated",
             "value": "Period"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Období"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obdobie"
+          }
         }
       }
     },
@@ -1896,6 +3912,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "From"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od"
           }
         }
       }
@@ -1909,6 +3937,18 @@
             "state": "translated",
             "value": "Through"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Do"
+          }
         }
       }
     },
@@ -1920,6 +3960,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Daily work time"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní odpracovaný čas"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denný odpracovaný čas"
           }
         }
       }
@@ -1933,6 +3985,18 @@
             "state": "translated",
             "value": "Work by project"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práce podle projektů"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Práca podľa projektov"
+          }
         }
       }
     },
@@ -1944,6 +4008,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "No work tracked in this period"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V tomto období není zaznamenaná žádná práce"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V tomto období nie je zaznamenaná žiadna práca"
           }
         }
       }
@@ -1957,6 +4033,18 @@
             "state": "translated",
             "value": "Daily details"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní podrobnosti"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denné podrobnosti"
+          }
         }
       }
     },
@@ -1968,6 +4056,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "First start"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "První začátek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prvý začiatok"
           }
         }
       }
@@ -1981,6 +4081,18 @@
             "state": "translated",
             "value": "Last end"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poslední konec"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Posledný koniec"
+          }
         }
       }
     },
@@ -1992,6 +4104,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Refresh your entries to see your totals"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro zobrazení součtů obnovte záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na zobrazenie súčtov obnovte záznamy"
           }
         }
       }
@@ -2005,6 +4129,18 @@
             "state": "translated",
             "value": "Work targets"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovní cíle"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovné ciele"
+          }
         }
       }
     },
@@ -2016,6 +4152,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Daily target"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní cíl"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denný cieľ"
           }
         }
       }
@@ -2029,6 +4177,18 @@
             "state": "translated",
             "value": "Weekly target"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týdenní cíl"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týždenný cieľ"
+          }
         }
       }
     },
@@ -2040,6 +4200,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Remaining"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zbývá"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zostáva"
           }
         }
       }
@@ -2053,6 +4225,18 @@
             "state": "translated",
             "value": "Daily target in hours"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní cíl v hodinách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denný cieľ v hodinách"
+          }
         }
       }
     },
@@ -2064,6 +4248,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Weekly target in hours"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týdenní cíl v hodinách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Týždenný cieľ v hodinách"
           }
         }
       }
@@ -2077,6 +4273,18 @@
             "state": "translated",
             "value": "Targets count work time only. Set a target to 0 to turn it off."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cíle zahrnují jen odpracovaný čas. Nastavením na 0 cíl vypnete."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ciele zahŕňajú iba odpracovaný čas. Nastavením na 0 cieľ vypnete."
+          }
         }
       }
     },
@@ -2089,17 +4297,41 @@
             "state": "translated",
             "value": "Set work targets in Workspace settings"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovní cíle nastavíte v nastavení pracovního prostředí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pracovné ciele nastavíte v nastaveniach pracovného prostredia"
+          }
         }
       }
     },
     "history.allBillability": {
       "extractionState": "manual",
-      "comment": "Filter option including client-billable and non-billable entries.",
+      "comment": "Option in the Billability filter. Includes entries both marked and not marked for client billing; other history filters still apply.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "All billability"
+            "value": "All entries"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všechny záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všetky záznamy"
           }
         }
       }
@@ -2113,6 +4345,18 @@
             "state": "translated",
             "value": "Billable"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturovatelné"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturovateľné"
+          }
         }
       }
     },
@@ -2124,6 +4368,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Non-billable"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nefakturovatelné"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nefakturovateľné"
           }
         }
       }
@@ -2137,6 +4393,18 @@
             "state": "translated",
             "value": "Billability"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturácia"
+          }
         }
       }
     },
@@ -2148,6 +4416,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "All projects"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všechny projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všetky projekty"
           }
         }
       }
@@ -2161,6 +4441,18 @@
             "state": "translated",
             "value": "Search descriptions"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat v popisech"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hľadať v popisoch"
+          }
         }
       }
     },
@@ -2173,6 +4465,18 @@
             "state": "translated",
             "value": "No matching entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné odpovídající záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žiadne zodpovedajúce záznamy"
+          }
         }
       }
     },
@@ -2183,7 +4487,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Try another date range, project, or search"
+            "value": "Change your search or filters"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změňte hledání nebo filtry"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmeňte vyhľadávanie alebo filtre"
           }
         }
       }
@@ -2197,6 +4513,18 @@
             "state": "translated",
             "value": "Matching entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpovídající záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zodpovedajúce záznamy"
+          }
         }
       }
     },
@@ -2208,6 +4536,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Running"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Běží"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beží"
           }
         }
       }
@@ -2221,6 +4561,18 @@
             "state": "translated",
             "value": "Pinned tasks"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připnuté úlohy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripnuté úlohy"
+          }
         }
       }
     },
@@ -2232,6 +4584,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pin task"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připnout úlohu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripnúť úlohu"
           }
         }
       }
@@ -2245,6 +4609,18 @@
             "state": "translated",
             "value": "Unpin task"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odepnout úlohu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odopnúť úlohu"
+          }
         }
       }
     },
@@ -2256,6 +4632,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stop the current timer and start a pinned task"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastavit aktuální časovač a spustit připnutou úlohu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastaviť aktuálny časovač a spustiť pripnutú úlohu"
           }
         }
       }
@@ -2269,6 +4657,18 @@
             "state": "translated",
             "value": "Timer reminders"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připomínky časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripomienky časovača"
+          }
         }
       }
     },
@@ -2280,6 +4680,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Idle reminder in minutes"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připomínka nečinnosti v minutách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripomienka nečinnosti v minútach"
           }
         }
       }
@@ -2293,6 +4705,18 @@
             "state": "translated",
             "value": "Long timer reminder in hours"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Připomínka dlouhého běhu v hodinách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripomienka dlhého behu v hodinách"
+          }
         }
       }
     },
@@ -2304,6 +4728,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Set a reminder to 0 to turn it off. Reminders ask you to review your timer and never change entries automatically."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavením na 0 připomínku vypnete. Připomínky vás vyzvou ke kontrole časovače a nikdy automaticky nemění záznamy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavením na 0 pripomienku vypnete. Pripomienky vás vyzvú na kontrolu časovača a nikdy automaticky nemenia záznamy."
           }
         }
       }
@@ -2317,6 +4753,18 @@
             "state": "translated",
             "value": "Your timer is still running"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač stále běží"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač stále beží"
+          }
         }
       }
     },
@@ -2327,7 +4775,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "You seem to be away from your Mac. Open Fluidtime to review your running timer."
+            "value": "Your Mac has been idle. Review your running timer in Fluidtime."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váš Mac byl nečinný. Zkontrolujte běžící časovač ve Fluidtime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váš Mac bol nečinný. Skontrolujte bežiaci časovač vo Fluidtime."
           }
         }
       }
@@ -2339,7 +4799,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your timer has been running for a while. Open Fluidtime to review it."
+            "value": "Your timer has reached the reminder time set in Workspace settings. Review your timer in Fluidtime."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač dosáhl doby pro připomenutí nastavené v pracovním prostředí. Zkontrolujte ho ve Fluidtime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač dosiahol čas na pripomenutie nastavený v pracovnom prostredí. Skontrolujte ho vo Fluidtime."
           }
         }
       }
@@ -2353,41 +4825,89 @@
             "state": "translated",
             "value": "Dismiss reminder"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skrýt připomínku"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skryť pripomienku"
+          }
         }
       }
     },
     "feedback.showConfirmations": {
       "extractionState": "manual",
-      "comment": "Enables short floating confirmations after confirmed server start or stop operations.",
+      "comment": "Enables floating success confirmations for the global timer shortcut. Onscreen start and stop controls do not show success confirmations.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Show timer confirmations"
+            "value": "Show timer shortcut confirmations"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat potvrzení zkratky časovače"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovať potvrdenia skratky časovača"
           }
         }
       }
     },
     "feedback.timerStarted": {
       "extractionState": "manual",
-      "comment": "Shown only after Solidtime confirms a new work entry.",
+      "comment": "Floating confirmation shown after a successful global timer shortcut action. Never shown for onscreen controls.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Timer started"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač spuštěn"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač spustený"
+          }
         }
       }
     },
     "feedback.timerStopped": {
       "extractionState": "manual",
-      "comment": "Shown only after Solidtime confirms the entry end.",
+      "comment": "Floating confirmation shown after a successful global timer shortcut action. Never shown for onscreen controls.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Timer stopped"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač zastaven"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač zastavený"
           }
         }
       }
@@ -2401,6 +4921,18 @@
             "state": "translated",
             "value": "Couldn't update your timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač se nepodařilo aktualizovat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Časovač sa nepodarilo aktualizovať"
+          }
         }
       }
     },
@@ -2412,6 +4944,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Open Fluidtime for details"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podrobnosti zobrazíte ve Fluidtime"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podrobnosti zobrazíte vo Fluidtime"
           }
         }
       }
@@ -2425,6 +4969,18 @@
             "state": "translated",
             "value": "Start or stop timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit nebo zastavit časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustiť alebo zastaviť časovač"
+          }
         }
       }
     },
@@ -2435,19 +4991,43 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Starts a new timer using your last work entry, or stops the running timer. Changes are confirmed with a brief floating message."
+            "value": "Start a timer using your latest completed entry, or stop the running timer"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustí časovač podle posledního dokončeného záznamu nebo zastaví běžící časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustí časovač podľa posledného dokončeného záznamu alebo zastaví bežiaci časovač"
           }
         }
       }
     },
     "earnings.hidden": {
       "extractionState": "manual",
-      "comment": "Privacy state; monetary values and salary controls are absent from the visible and accessibility views.",
+      "comment": "Privacy state; the hourly rate and earnings are absent from visible and accessibility content.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Earnings are hidden"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Výdělky jsou skryté"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zárobky sú skryté"
           }
         }
       }
@@ -2459,7 +5039,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Use Touch ID to see an earnings preview based on your hourly rate in Settings"
+            "value": "Use Touch ID to view an earnings preview based on the hourly rate saved in Earnings settings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocí Touch ID zobrazíte odhad výdělku podle hodinové sazby uložené v nastavení výdělků"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocou Touch ID zobrazíte odhad zárobku podľa hodinovej sadzby uloženej v nastaveniach zárobkov"
           }
         }
       }
@@ -2471,7 +5063,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verify with Touch ID"
+            "value": "Show rate or earnings with Touch ID"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit sazbu nebo výdělky přes Touch ID"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť sadzbu alebo zárobky cez Touch ID"
           }
         }
       }
@@ -2483,7 +5087,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hide private values"
+            "value": "Hide rate and earnings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skrýt sazbu a výdělky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skryť sadzbu a zárobky"
           }
         }
       }
@@ -2497,29 +5113,65 @@
             "state": "translated",
             "value": "Include only billable work"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahrnout jen fakturovatelnou práci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahrnúť iba fakturovateľnú prácu"
+          }
         }
       }
     },
     "earnings.billableHelp": {
       "extractionState": "manual",
-      "comment": "Distinguishes client billing from paid employment.",
+      "comment": "Billable is a Solidtime entry flag for client billing. It does not establish that a client has been charged or determine employee pay. The filter is off by default.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Billable means charged to a client. Leave this off to include all your work time."
+            "value": "Billable work is marked for client billing. Leave this filter off to include all your work time."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturovatelná práce je označená pro účtování klientovi. Pro zahrnutí veškeré práce nechte tento filtr vypnutý."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fakturovateľná práca je označená na účtovanie klientovi. Na zahrnutie všetkej práce nechajte tento filter vypnutý."
           }
         }
       }
     },
     "earnings.estimate": {
       "extractionState": "manual",
-      "comment": "Gross estimate from eligible work hours and effective hourly rates, without tax or deductions.",
+      "comment": "Approximate preview using one current hourly rate and tracked work in the selected period. No historical rate, payroll, or pay eligibility rules are applied.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Estimated earnings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad výdělku"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad zárobku"
           }
         }
       }
@@ -2531,31 +5183,67 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This preview uses your fixed hourly rate and tracked work. Gaps between entries, including lunch, are unpaid. Taxes and deductions aren’t included."
+            "value": "The preview uses your current hourly rate for the selected work time. Gaps, including lunch, aren't included. The estimate doesn't include taxes or deductions."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náhled používá aktuální hodinovou sazbu pro vybraný odpracovaný čas. Mezery včetně oběda se nezapočítávají. Odhad nezahrnuje daně ani srážky."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náhľad používa aktuálnu hodinovú sadzbu pre vybraný odpracovaný čas. Medzery vrátane obeda sa nezapočítavajú. Odhad nezahŕňa dane ani zrážky."
           }
         }
       }
     },
     "earnings.currency": {
       "extractionState": "manual",
-      "comment": "Currency for all saved hourly rates in the selected account and organization.",
+      "comment": "Currency for the single hourly rate saved for the selected Solidtime instance, user, and organization. Currency names are localized by the system.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Currency"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Měna"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mena"
+          }
         }
       }
     },
     "earnings.hourlyRate": {
       "extractionState": "manual",
-      "comment": "Positive decimal amount in the selected currency, per hour of work.",
+      "comment": "Nonnegative decimal amount per hour in the selected currency. Zero is allowed. One current rate is used for all preview periods.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Hourly rate"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinová sazba"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinová sadzba"
           }
         }
       }
@@ -2569,6 +5257,18 @@
             "state": "translated",
             "value": "Unsaved rate changes"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neuložené změny sazby"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neuložené zmeny sadzby"
+          }
         }
       }
     },
@@ -2581,53 +5281,113 @@
             "state": "translated",
             "value": "Enter an hourly rate of 0 or more"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadejte hodinovou sazbu 0 nebo vyšší"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zadajte hodinovú sadzbu 0 alebo vyššiu"
+          }
         }
       }
     },
     "earnings.readFailed": {
       "extractionState": "manual",
-      "comment": "Keychain read error after successful biometric verification.",
+      "comment": "Local Keychain read failed after Touch ID verification. The cause is unknown; do not instruct users to unlock Keychain or imply that verification failed.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Couldn’t load your hourly rate. Unlock Keychain and try again."
+            "value": "Couldn't load your hourly rate. Try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovou sazbu se nepodařilo načíst. Zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovú sadzbu sa nepodarilo načítať. Skúste to znova."
           }
         }
       }
     },
     "earnings.saveFailed": {
       "extractionState": "manual",
-      "comment": "Keychain save error. The authenticated editor preserves the unsaved draft until it is hidden or closed.",
+      "comment": "Local Keychain save failed. The authenticated editor keeps the draft while it remains visible. Hiding the rate or closing settings discards unsaved changes.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Couldn’t save your hourly rate. Your changes are still here."
+            "value": "Couldn't save your hourly rate. Try saving again before hiding the rate or closing settings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovou sazbu se nepodařilo uložit. Zkuste ji uložit znovu, než ji skryjete nebo zavřete nastavení."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovú sadzbu sa nepodarilo uložiť. Skúste ju uložiť znova, kým ju skryjete alebo zatvoríte nastavenia."
           }
         }
       }
     },
     "export.entries": {
       "extractionState": "manual",
-      "comment": "Opens the native save dialog to export all filtered entries, across every page, as CSV.",
+      "comment": "Opens the native save dialog to export all entries matching the current filters as CSV, meaning comma-separated values. No hourly rates or earnings are exported.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Export entries"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportovat záznamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportovať záznamy"
+          }
         }
       }
     },
     "export.summary": {
       "extractionState": "manual",
-      "comment": "Exports daily work, estimated lunch, attendance spans, and other gaps; excludes salary and earnings.",
+      "comment": "Exports daily tracked work, estimated lunch gaps, time at work, and other gaps as CSV, meaning comma-separated values. Excludes hourly rates and earnings.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Export daily summary"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportovat denní souhrn"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportovať denný súhrn"
           }
         }
       }
@@ -2641,6 +5401,18 @@
             "state": "translated",
             "value": "Start in UTC"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začátek v UTC"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začiatok v UTC"
+          }
         }
       }
     },
@@ -2652,6 +5424,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "End in UTC"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konec v UTC"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koniec v UTC"
           }
         }
       }
@@ -2665,6 +5449,18 @@
             "state": "translated",
             "value": "Work in seconds"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas v sekundách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpracovaný čas v sekundách"
+          }
         }
       }
     },
@@ -2676,6 +5472,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Time at work in seconds"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci v sekundách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čas v práci v sekundách"
           }
         }
       }
@@ -2689,6 +5497,18 @@
             "state": "translated",
             "value": "Other gaps in seconds"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatní mezery v sekundách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ostatné medzery v sekundách"
+          }
         }
       }
     },
@@ -2700,6 +5520,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Yes"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ano"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Áno"
           }
         }
       }
@@ -2713,6 +5545,18 @@
             "state": "translated",
             "value": "No"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie"
+          }
         }
       }
     },
@@ -2724,6 +5568,42 @@
           "stringUnit": {
             "state": "translated",
             "value": "Couldn't export the file. Choose another location and try again."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soubor se nepodařilo exportovat. Vyberte jiné umístění a zkuste to znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Súbor sa nepodarilo exportovať. Vyberte iné umiestnenie a skúste to znova."
+          }
+        }
+      }
+    },
+    "editor.saving": {
+      "extractionState": "manual",
+      "comment": "Accessibility label for the delayed progress indicator while saving a time entry. Saving keeps the editor open.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving changes"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukládání změn"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukladanie zmien"
           }
         }
       }
@@ -2737,6 +5617,18 @@
             "state": "translated",
             "value": "Start"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začátek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začiatok"
+          }
         }
       }
     },
@@ -2749,6 +5641,18 @@
             "state": "translated",
             "value": "End"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konec"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koniec"
+          }
         }
       }
     },
@@ -2759,31 +5663,67 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Billable controls client billing, not your hourly pay"
+            "value": "Billable marks an entry for client billing and doesn’t determine your pay"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Označení pro fakturaci se týká účtování klientovi a neurčuje vaši odměnu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Označenie na fakturáciu sa týka účtovania klientovi a neurčuje vašu odmenu"
           }
         }
       }
     },
     "editor.invalidDates": {
       "extractionState": "manual",
-      "comment": "Date validation; a running entry has no end but its start cannot be in the future.",
+      "comment": "Date validation for start and optional end. A start equal to now is allowed. A completed end must be strictly after the start and no later than now. Running entries have no end.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Choose a start before the end and keep both times in the past"
+            "value": "Start times can't be in the future. End times must be after the start and no later than now."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začátek nesmí být v budoucnosti. Konec musí být po začátku a nejpozději teď."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začiatok nesmie byť v budúcnosti. Koniec musí byť po začiatku a najneskôr teraz."
           }
         }
       }
     },
     "editor.timerChanged": {
       "extractionState": "manual",
-      "comment": "Refuses to edit a running entry after the server’s active entry changed.",
+      "comment": "Save blocked because a cached running entry is no longer the active timer, or a cached completed entry has become active. Cancel the editor and refresh before trying again.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your running timer changed on Solidtime. Cancel this edit and refresh your entries."
+            "value": "This entry's timer status changed on Solidtime. Cancel this edit and refresh your entries."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stav časovače u tohoto záznamu se v Solidtime změnil. Zrušte úpravu a obnovte záznamy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stav časovača pri tomto zázname sa v Solidtime zmenil. Zrušte úpravu a obnovte záznamy."
           }
         }
       }
@@ -2797,6 +5737,18 @@
             "state": "translated",
             "value": "App updates"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizace aplikace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizácie apky"
+          }
         }
       }
     },
@@ -2808,6 +5760,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Check for updates automatically"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky hledat aktualizace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky vyhľadávať aktualizácie"
           }
         }
       }
@@ -2821,6 +5785,18 @@
             "state": "translated",
             "value": "Download and install updates automatically"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky stahovat a instalovat aktualizace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky sťahovať a inštalovať aktualizácie"
+          }
         }
       }
     },
@@ -2833,6 +5809,18 @@
             "state": "translated",
             "value": "Check for updates"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhledat aktualizace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhľadať aktualizácie"
+          }
         }
       }
     },
@@ -2843,7 +5831,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Updates come from Fluidtime’s GitHub Releases and are verified before installation"
+            "value": "Updates come from Fluidtime’s GitHub Releases page and are verified before installation"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizace pocházejí ze stránky vydání Fluidtime na GitHubu a před instalací se ověřují"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizácie pochádzajú zo stránky vydaní Fluidtime na GitHube a pred inštaláciou sa overujú"
           }
         }
       }
@@ -2855,7 +5855,19 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Updates aren’t available yet. Install new versions manually for now."
+            "value": "In-app updates aren't available yet. Download and install new versions from GitHub."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizace v aplikaci zatím nejsou k dispozici. Nové verze si stáhněte a nainstalujte z GitHubu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktualizácie v apke zatiaľ nie sú k dispozícii. Nové verzie si stiahnite a nainštalujte z GitHubu."
           }
         }
       }
@@ -2869,17 +5881,41 @@
             "state": "translated",
             "value": "Running in another organization"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Běží v jiné organizaci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beží v inej organizácii"
+          }
         }
       }
     },
     "timer.noRecentEntry": {
       "extractionState": "manual",
-      "comment": "Shortcut empty state when no completed work entry can supply the default.",
+      "comment": "Timer shortcut cannot start without a completed entry to copy. Completing an entry means stopping its timer; the entry can come from Fluidtime or Solidtime.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Create your first work entry in Fluidtime before using the timer shortcut"
+            "value": "Complete a time entry before using the timer shortcut"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Před použitím zkratky časovače dokončete časový záznam"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pred použitím skratky časovača dokončite časový záznam"
           }
         }
       }
@@ -2893,6 +5929,18 @@
             "state": "translated",
             "value": "Fluidtime, timer running, today's total %@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač běží, dnes celkem %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač beží, dnes celkovo %@"
+          }
         }
       }
     },
@@ -2904,6 +5952,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fluidtime, timer running, this week's total %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač běží, tento týden celkem %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime, časovač beží, tento týždeň celkovo %@"
           }
         }
       }
@@ -2917,6 +5977,18 @@
             "state": "translated",
             "value": "Fluidtime-entries.csv"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-zaznamy.csv"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-zaznamy.csv"
+          }
         }
       }
     },
@@ -2928,6 +6000,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fluidtime-summary.csv"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-souhrn.csv"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fluidtime-suhrn.csv"
           }
         }
       }
@@ -2941,6 +6025,18 @@
             "state": "translated",
             "value": "Review your timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zkontrolujte časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skontrolujte časovač"
+          }
         }
       }
     },
@@ -2953,17 +6049,41 @@
             "state": "translated",
             "value": "Review your timer"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zkontrolujte časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skontrolujte časovač"
+          }
         }
       }
     },
     "analytics.lunchTime": {
       "extractionState": "manual",
-      "comment": "Statistical unpaid lunch duration: the full longest completed gap between work entries whose midpoint is within the configured lunch window. No timer entry is created.",
+      "comment": "Estimated lunch duration: the full longest bounded same-day gap between tracked entries whose midpoint is within the configured lunch window. No entry or pay classification is created.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Estimated lunch"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad oběda"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad obeda"
           }
         }
       }
@@ -2977,29 +6097,65 @@
             "state": "translated",
             "value": "Average daily lunch"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Průměrná denní doba oběda"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priemerný denný čas obeda"
+          }
         }
       }
     },
     "analytics.lunchHelp": {
       "extractionState": "manual",
-      "comment": "Explains how unpaid lunch is inferred from existing work entries without writing entries. The complete qualifying gap is counted, not only the portion within the configured window.",
+      "comment": "Lunch is inferred from gaps between tracked entries, not recorded as an entry. Count the whole qualifying gap, not just its overlap with the lunch window. On equal durations, the first gap is used.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lunch is the longest gap between work entries whose midpoint falls in your lunch hours. It appears after work resumes. Change lunch hours in Workspace settings."
+            "value": "Lunch is estimated from the longest gap between entries each day. The gap's midpoint must fall within your lunch window, and work must resume afterward. Change the window in Workspace settings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oběd se odhaduje z nejdelší mezery mezi záznamy v daném dni. Střed mezery musí spadat do nastavené doby oběda a práce poté musí pokračovat. Dobu oběda změníte v nastavení pracovního prostředí."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obed sa odhaduje z najdlhšej medzery medzi záznamami v danom dni. Stred medzery musí spadať do nastaveného času obeda a práca potom musí pokračovať. Čas obeda zmeníte v nastaveniach pracovného prostredia."
           }
         }
       }
     },
     "lunch.title": {
       "extractionState": "manual",
-      "comment": "Workspace settings section for the time window used to infer an unpaid lunch gap between work timers.",
+      "comment": "Workspace settings section for the time window used to estimate lunch from gaps between tracked entries. No paid or unpaid status is inferred.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Lunch estimate"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad oběda"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad obeda"
           }
         }
       }
@@ -3013,6 +6169,18 @@
             "state": "translated",
             "value": "Lunch window starts"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začátek doby oběda"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začiatok času obeda"
+          }
         }
       }
     },
@@ -3025,17 +6193,41 @@
             "state": "translated",
             "value": "Lunch window ends"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konec doby oběda"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koniec času obeda"
+          }
         }
       }
     },
     "lunch.help": {
       "extractionState": "manual",
-      "comment": "The default window is 11:00–15:00. One fully bounded gap per local day is inferred as lunch; other gaps stay separate. This setting never changes tracked work or pay.",
+      "comment": "Default window is 11:00–15:00 in the Solidtime account time zone. At most one fully bounded same-day gap is estimated as lunch; other gaps remain separate. Window start is inclusive and end is exclusive. Changing the window never changes tracked work or earnings.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Uses your Solidtime time zone. Counts the full longest gap between work entries whose midpoint falls within these hours. No time entry is created."
+            "value": "The lunch estimate uses your Solidtime time zone and the full length of the longest gap whose midpoint falls within these hours. Changing this window doesn't change your work totals or earnings preview."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad oběda používá časové pásmo ze Solidtime a celou délku nejdelší mezery, jejíž střed spadá do těchto hodin. Změna tohoto rozmezí neovlivní odpracovaný čas ani odhad výdělku."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad obeda používa časové pásmo zo Solidtime a celú dĺžku najdlhšej medzery, ktorej stred spadá do týchto hodín. Zmena tohto rozmedzia neovplyvní odpracovaný čas ani odhad zárobku."
           }
         }
       }
@@ -3049,6 +6241,18 @@
             "state": "translated",
             "value": "Estimated lunch in seconds"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad oběda v sekundách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odhad obeda v sekundách"
+          }
         }
       }
     },
@@ -3060,6 +6264,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Use Touch ID to view or change your hourly rate. Your rate stays in Keychain on this Mac."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocí Touch ID můžete zobrazit nebo změnit hodinovou sazbu. Sazba zůstává v Klíčence na tomto Macu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocou Touch ID môžete zobraziť alebo zmeniť hodinovú sadzbu. Sadzba zostáva v Kľúčenke na tomto Macu."
           }
         }
       }
@@ -3073,6 +6289,18 @@
             "state": "translated",
             "value": "This rate applies to every period in the preview. Save your changes to keep them. Hiding the rate discards unsaved changes."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tato sazba platí pro všechna období v náhledu. Změny zachováte uložením. Skrytím sazby zahodíte neuložené změny."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Táto sadzba platí pre všetky obdobia v náhľade. Zmeny zachováte uložením. Skrytím sadzby zahodíte neuložené zmeny."
+          }
         }
       }
     },
@@ -3084,6 +6312,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Save hourly rate"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložit hodinovou sazbu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uložiť hodinovú sadzbu"
           }
         }
       }
@@ -3097,17 +6337,41 @@
             "state": "translated",
             "value": "Show your hourly rate or earnings preview"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení hodinové sazby nebo odhadu výdělku"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazenie hodinovej sadzby alebo odhadu zárobku"
+          }
         }
       }
     },
     "earnings.touchIdUnavailable": {
       "extractionState": "manual",
-      "comment": "Biometric-only access is required. Also used when Touch ID is locked out, unavailable on the hardware, or not enrolled. Do not imply password fallback is available.",
+      "comment": "Touch ID is an Apple biometric feature; use its official localized product name. Shown when hardware is unavailable or Touch ID is not enrolled. Hardware may not support Touch ID, so setup is not guaranteed to resolve this. No password or Apple Watch fallback is offered.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Touch ID is unavailable. Set up Touch ID in System Settings to view private values."
+            "value": "Touch ID is required to view your hourly rate and earnings. Check Touch ID in System Settings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro zobrazení hodinové sazby a výdělků je potřeba Touch ID. Zkontrolujte Touch ID v Nastavení systému."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na zobrazenie hodinovej sadzby a zárobkov je potrebné Touch ID. Skontrolujte Touch ID v Systémových nastaveniach."
           }
         }
       }
@@ -3119,19 +6383,43 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Couldn’t verify with Touch ID. Try again to view private values."
+            "value": "Couldn't verify with Touch ID. Try again to view your hourly rate or earnings."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ověření přes Touch ID se nepodařilo. Zkuste znovu zobrazit hodinovou sazbu nebo výdělky."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overenie cez Touch ID sa nepodarilo. Skúste znova zobraziť hodinovú sadzbu alebo zárobky."
           }
         }
       }
     },
     "earnings.unlocking": {
       "extractionState": "manual",
-      "comment": "Accessibility label for the delayed progress indicator while Touch ID and a private Keychain read complete.",
+      "comment": "Accessibility label for delayed progress while Touch ID verification and a local Keychain read complete. Touch ID is an Apple product name.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verifying private access"
+            "value": "Verifying with Touch ID"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ověřování přes Touch ID"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Overovanie cez Touch ID"
           }
         }
       }
@@ -3145,6 +6433,18 @@
             "state": "translated",
             "value": "Connect to Solidtime and choose an organization to set your hourly rate"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro nastavení hodinové sazby připojte účet Solidtime a vyberte organizaci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na nastavenie hodinovej sadzby pripojte účet Solidtime a vyberte organizáciu"
+          }
         }
       }
     },
@@ -3156,6 +6456,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Change your hourly rate in Earnings settings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovou sazbu změníte v nastavení výdělků"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hodinovú sadzbu zmeníte v nastaveniach zárobkov"
           }
         }
       }
@@ -3169,6 +6481,18 @@
             "state": "translated",
             "value": "Touch ID is locked. Unlock your Mac with your password, then try Touch ID again."
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touch ID je zablokované. Odemkněte Mac heslem a zkuste Touch ID znovu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touch ID je zablokované. Odomknite Mac heslom a skúste Touch ID znova."
+          }
         }
       }
     },
@@ -3181,40 +6505,88 @@
             "state": "translated",
             "value": "%1$@. %2$@"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@. %2$@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@. %2$@"
+          }
         }
       }
     },
     "projects.search": {
-      "comment": "Search field for local project visibility preferences.",
+      "comment": "Search field for available projects in entry pickers and for project visibility preferences. Searches project names without changing them.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "Search projects"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hľadať projekty"
+          }
         }
       },
       "extractionState": "manual"
     },
     "projects.noMatches": {
-      "comment": "Empty result for project visibility search.",
+      "comment": "Empty search result in an entry project picker or the project visibility list.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
             "value": "No matching projects"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žádné odpovídající projekty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Žiadne zodpovedajúce projekty"
+          }
         }
       },
       "extractionState": "manual"
     },
     "projects.currentAssignmentHelp": {
-      "comment": "Help for a disabled current project in an entry picker.",
+      "comment": "Help in the entry project picker when the assigned project is hidden or unavailable. The assignment stays unchanged unless the user chooses another project.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This entry keeps its current project assignment even when the project is hidden or unavailable."
+            "value": "The entry keeps its assigned project even when the project is hidden or unavailable"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam si ponechá přiřazený projekt, i když je skrytý nebo nedostupný"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Záznam si ponechá priradený projekt, aj keď je skrytý alebo nedostupný"
           }
         }
       },
@@ -3228,6 +6600,18 @@
             "state": "translated",
             "value": "Selected period"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrané období"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vybrané obdobie"
+          }
         }
       },
       "extractionState": "manual"
@@ -3239,6 +6623,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Current totals"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuální součty"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktuálne súčty"
           }
         }
       },
@@ -3252,6 +6648,18 @@
             "state": "translated",
             "value": "Find"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hľadať"
+          }
         }
       },
       "extractionState": "manual"
@@ -3263,6 +6671,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Show or hide sidebar"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit nebo skrýt boční panel"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť alebo skryť bočný panel"
           }
         }
       },
@@ -3277,6 +6697,18 @@
             "state": "translated",
             "value": "Unlock earnings"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odemknout výdělky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odomknúť zárobky"
+          }
         }
       }
     },
@@ -3288,6 +6720,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Loading your account"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Načítání účtu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Načítavanie účtu"
           }
         }
       }
@@ -3301,17 +6745,41 @@
             "state": "translated",
             "value": "Account unavailable"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet není dostupný"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Účet nie je dostupný"
+          }
         }
       }
     },
     "account.unavailableHelp": {
       "extractionState": "manual",
-      "comment": "Recovery guidance after account loading fails.",
+      "comment": "Recovery after account loading fails. Refresh entries reads the latest data; the connection address and API key are in the Account tab of Settings.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Try refreshing, or check your connection in Settings."
+            "value": "Refresh your entries or check your Solidtime connection in Account settings"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovte záznamy nebo zkontrolujte připojení k Solidtime v nastavení účtu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovte záznamy alebo skontrolujte pripojenie k Solidtime v nastaveniach účtu"
           }
         }
       }
@@ -3325,6 +6793,18 @@
             "state": "translated",
             "value": "Start"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustiť"
+          }
         }
       }
     },
@@ -3336,6 +6816,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stop"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastavit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zastaviť"
           }
         }
       }
@@ -3349,6 +6841,18 @@
             "state": "translated",
             "value": "Unpin a task"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odepnout úlohu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odopnúť úlohu"
+          }
         }
       }
     },
@@ -3360,6 +6864,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Summary"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Souhrn"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Súhrn"
           }
         }
       }
@@ -3373,6 +6889,18 @@
             "state": "translated",
             "value": "Analysis"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analýza"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analýza"
+          }
         }
       }
     },
@@ -3384,6 +6912,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "How these totals are calculated"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jak se tyto součty počítají"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ako sa tieto súčty počítajú"
           }
         }
       }
@@ -3397,29 +6937,65 @@
             "state": "translated",
             "value": "Delete entry"
           }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smazat záznam"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vymazať záznam"
+          }
         }
       }
     },
     "entry.deleteHelp": {
       "extractionState": "manual",
-      "comment": "Confirmation before deleting a completed time entry.",
+      "comment": "Confirmation before permanent deletion of a completed Solidtime entry. Deletion removes the entry and its duration from totals. No undo is available.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This permanently deletes the tracked work and removes it from your totals. This cannot be undone."
+            "value": "Deleting this entry removes its tracked time from your totals. You can't undo this deletion."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smazáním záznamu odeberete jeho odpracovaný čas ze součtů. Smazání nelze vrátit zpět."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vymazaním záznamu odoberiete jeho odpracovaný čas zo súčtov. Vymazanie sa nedá vrátiť späť."
           }
         }
       }
     },
     "entry.deleteRunningHelp": {
       "extractionState": "manual",
-      "comment": "Confirmation before deleting a running entry. Deletion is distinct from stopping and retaining the entry.",
+      "comment": "Confirmation before permanent deletion of a running entry. Stopping a timer retains its tracked time, while deleting removes it. Cancel refers to the confirmation action; stop refers to the timer control.",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This permanently deletes the running entry and its tracked time. To keep the tracked time, cancel and use Stop instead. This cannot be undone."
+            "value": "Deleting this running entry removes its tracked time. To keep that time, cancel and stop the timer instead. You can't undo this deletion."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smazáním běžícího záznamu odeberete jeho odpracovaný čas. Pokud chcete čas zachovat, zrušte tuto akci a časovač zastavte. Smazání nelze vrátit zpět."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vymazaním bežiaceho záznamu odoberiete jeho odpracovaný čas. Ak chcete čas zachovať, zrušte túto akciu a časovač zastavte. Vymazanie sa nedá vrátiť späť."
           }
         }
       }
@@ -3431,7 +7007,67 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "This entry’s running state changed on Solidtime. Refresh before deleting it."
+            "value": "This entry's timer status changed on Solidtime. Refresh your entries before deleting it."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stav časovače u tohoto záznamu se v Solidtime změnil. Před smazáním obnovte záznamy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stav časovača pri tomto zázname sa v Solidtime zmenil. Pred vymazaním obnovte záznamy."
+          }
+        }
+      }
+    },
+    "timer.expand": {
+      "extractionState": "manual",
+      "comment": "Button expanding the main-window timer to show project details, pinned tasks, and totals.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expand timer"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozbalit časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozbaliť časovač"
+          }
+        }
+      }
+    },
+    "timer.collapse": {
+      "extractionState": "manual",
+      "comment": "Button collapsing the main-window timer into one row. The timer keeps running.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Collapse timer"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sbalit časovač"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zbaliť časovač"
           }
         }
       }

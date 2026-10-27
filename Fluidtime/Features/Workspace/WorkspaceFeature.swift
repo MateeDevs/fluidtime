@@ -38,6 +38,9 @@ struct WorkspaceFeature {
                 state.historyRequestID = nil
                 state.historyPresentation = presentation
                 return .none
+            case .view(.toggleSidebar):
+                state.showsSidebar.toggle()
+                return .none
             case .view(.find):
                 state.tab = .history
                 state.searchFocusRequest += 1

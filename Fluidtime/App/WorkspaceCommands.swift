@@ -26,8 +26,10 @@ struct WorkspaceCommands: Commands {
     var body: some Commands {
         CommandGroup(after: .newItem) {
             Button(store?.workspace.tab == .history ? .exportEntries : .exportSummary) { export() }
+                .keyboardShortcut("e", modifiers: [.command, .shift])
                 .disabled(!canExport)
             Button(.openSolidtime) { store?.send(.view(.openInstanceTapped)) }
+                .keyboardShortcut("o", modifiers: [.command, .shift])
                 .disabled(!canUseWorkspace)
         }
         CommandGroup(after: .textEditing) {
@@ -36,6 +38,9 @@ struct WorkspaceCommands: Commands {
                 .disabled(!canUseWorkspace)
         }
         CommandGroup(after: .toolbar) {
+            Button(.commandToggleSidebar) { store?.send(.workspace(.view(.toggleSidebar))) }
+                .keyboardShortcut("s", modifiers: [.command, .control])
+                .disabled(!canUseWorkspace)
             Button(.refreshTimeEntries) { store?.send(.view(.refreshTapped)) }
                 .keyboardShortcut("r")
                 .disabled(!canUseWorkspace || store?.isBusy != false || store?.isConfigured != true)

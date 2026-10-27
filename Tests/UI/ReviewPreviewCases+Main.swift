@@ -28,7 +28,7 @@ extension ReviewPreviewFixtures {
         var dailyNarrow = preview("main-overview-daily-narrow", .main) {
             $0.workspace.tab = .daily
         }
-        dailyNarrow.size = NSSize(width: 420, height: 760)
+        dailyNarrow.size = NSSize(width: 640, height: 760)
         cases.append(dailyNarrow)
         var middle = preview("main-overview-middle", .main)
         middle.scroll = 0.5
@@ -91,7 +91,11 @@ extension ReviewPreviewFixtures {
                 unlocked(&$0, surface: .preview); $0.workspace.analysisPeriod = .custom
             },
             preview("main-earnings-unsynced", .main) { unlocked(&$0, surface: .preview); $0.data.lastSynced = nil }
-        ].map { item in var item = item; item.state.workspace.tab = .overview; return item }
+        ]
+        .map { item in
+            var item = item; item.state.workspace.tab = .overview; item.state.preferences.workspace
+                .earningsEnabled = true; return item
+        }
         var minimum = preview("main-earnings-minimum", .main) {
             $0.workspace.tab = .overview; unlocked(&$0, surface: .preview)
         }

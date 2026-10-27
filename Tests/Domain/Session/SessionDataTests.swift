@@ -20,6 +20,34 @@ struct SessionDataTests {
         #expect(data.recentEntries.map(\.id) == ["0", "2", "4", "5", "6"])
     }
 
+    @Test(arguments: ["org", "other-org"])
+    func `a replacement server timer removes stale running intervals`(_ organization: String) throws {
+        let now = try AnalyticsFixtures.date("2026-10-01T12:00:00Z")
+        let stale = try AnalyticsFixtures.entry("stale", start: "2026-10-01T08:00:00Z", end: nil)
+        let completed = try AnalyticsFixtures.entry(
+            "completed", start: "2026-10-01T07:00:00Z", end: "2026-10-01T08:00:00Z"
+        )
+        let replacement = try TimeEntry(
+            id: "replacement", start: AnalyticsFixtures.date("2026-10-01T11:00:00Z"), end: nil,
+            description: "Work", projectId: nil, taskId: nil, organizationId: organization,
+            userId: "me", billable: false, tags: []
+        )
+        var data = SessionData()
+        data.memberships = [.init(id: "member", organization: .init(id: "org", name: "Test"))]
+        data.selectedMembershipId = "member"
+        data.entries = [completed, stale]
+        data.active = stale
+        data.lastFullSync = now
+
+        data.apply(replacement, at: now)
+
+        #expect(data.active == replacement)
+        #expect(data.entries == (organization == "org" ? [completed, replacement] : [completed]))
+        #expect(data.lastFullSync == nil)
+        #expect(TrackedTime.total(data.entries, in: DateInterval(start: completed.start, end: now), now: now)
+            == (organization == "org" ? 7200 : 3600))
+    }
+
     @Test(arguments: ["UTC", "Europe/Prague"])
     func `month totals clip to account midnight and count running overlaps once`(_ zone: String) throws {
         var data = SessionData()

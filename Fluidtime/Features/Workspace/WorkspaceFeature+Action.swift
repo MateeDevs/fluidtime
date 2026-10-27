@@ -19,6 +19,7 @@ extension WorkspaceFeature {
         case pinTapped(TimeEntry)
         case export(CSVDocument)
         case find
+        case toggleSidebar
         case historyInputChanged(HistoryPresentation.Input)
     }
 

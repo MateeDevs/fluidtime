@@ -13,7 +13,7 @@ Use **Open Solidtime** whenever you need the full web app. Quitting Fluidtime le
 | --- | --- |
 | **Start, stop, and switch** | Track a new task or start from one of your five most recent entries. Switching stops the current timer before starting a new one. |
 | **See your progress** | Today's, this week's, and this month's main-window totals include your running timer, using your Solidtime account's time zone and week start. |
-| **Keep entries accurate** | Edit descriptions, projects, times, and billability in an anchored popover. Browse continuous, filterable history and delete entries after confirmation. |
+| **Keep entries accurate** | Edit descriptions, projects, times, and billability in a separate editor window. Browse continuous, filterable history and delete entries after confirmation. |
 | **Choose your menu bar** | Show the timer duration, today's total, this week's total, a timer status dot, or just the clock icon. Show or hide seconds, and optionally color the active dot using the running project. |
 | **Reach it from anywhere** | Toggle the menu with a customizable global keyboard shortcut, and choose whether Fluidtime launches at login. |
 | **Connect your account** | Use your Solidtime address and API key, then choose an organization. Your key stays in macOS Keychain. |

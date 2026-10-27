@@ -90,6 +90,47 @@ struct EntryEditorFeatureTests {
         await store.finish()
     }
 
+    @Test(arguments: [true, false])
+    func `completed edits read the server timer and reject a changed running state`(_ becameActive: Bool) async {
+        let completed = TimeEntry(
+            id: entry.id, start: entry.start, end: date, description: entry.description,
+            projectId: entry.projectId, taskId: entry.taskId, organizationId: entry.organizationId,
+            userId: entry.userId, billable: entry.billable, tags: entry.tags
+        )
+        let reads = LockIsolated(0)
+        let running = entry
+        let initial = EntryEditorFeature.State(
+            draft: EntryDraft(entry: completed), entry: completed, connection: connection,
+            membership: state.membership, projects: [project]
+        )
+        let store = TestStore(initialState: initial) { EntryEditorFeature() } withDependencies: {
+            $0.date.now = date
+            $0.continuousClock = TestClock()
+            $0.solidtime.activeEntry = { _ in
+                reads.withValue { $0 += 1 }
+                return becameActive ? running : nil
+            }
+            $0.solidtime.update = { _, _ in
+                #expect(!becameActive)
+                #expect(reads.value == 1)
+                return completed
+            }
+        }
+        await store.send(.view(.saveTapped)) { $0.isSaving = true }
+        if becameActive {
+            let failure = Failure(AppError.message(String(localized: .editorTimerChanged)))
+            await store.receive(.saveResponse(.failure(failure))) {
+                $0.isSaving = false
+                $0.error = failure.message
+            }
+        } else {
+            await store.receive(.saveResponse(.success(completed))) { $0.isSaving = false }
+            await store.receive(.delegate(.saved(completed)))
+        }
+        #expect(reads.value == 1)
+        await store.finish()
+    }
+
     @Test func `unavailable project fails before writing`() async {
         var initial = state
         initial.draft.projectId = "unavailable"

@@ -54,6 +54,7 @@ extension AppFeatureTests {
             $0.date.now = date
             $0.continuousClock = TestClock()
             $0.system.openEntryEditor = { _ in }
+            $0.solidtime.activeEntry = { _ in nil }
             $0.solidtime.update = { _, _ in saved }
         }
         await store.send(.view(.editTapped(existing))) { $0.destination = .editor(editor) }
@@ -87,6 +88,7 @@ extension AppFeatureTests {
             $0.date.now = date
             $0.continuousClock = TestClock()
             $0.system.openEntryEditor = { _ in }
+            $0.solidtime.activeEntry = { _ in nil }
             $0.solidtime.update = { _, _ in
                 await withCheckedContinuation { continuation.setValue($0) }
             }
