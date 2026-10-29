@@ -33,18 +33,26 @@ struct MainTimerControls: View {
                 let totals = store.data.totals(at: context.date)
                 let month = store.data.total(in: .month, at: context.date)
                 ViewThatFits(in: .horizontal) {
-                    HStack(spacing: 24) {
-                        total(.today, value: totals.today)
+                    HStack(alignment: .top, spacing: 24) {
+                        today(value: totals.today, at: context.date)
                         total(.thisWeek, value: totals.week)
                         total(.analyticsThisMonth, value: month)
                     }.fixedSize(horizontal: store.active != nil, vertical: false)
                     VStack(alignment: .leading, spacing: 8) {
-                        total(.today, value: totals.today)
+                        today(value: totals.today, at: context.date)
                         total(.thisWeek, value: totals.week)
                         total(.analyticsThisMonth, value: month)
                     }
                 }
             }
+        }
+    }
+
+    private func today(value: TimeInterval, at now: Date) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            total(.today, value: value)
+            WorkFinishCaption(data: store.data, targetHours: store.preferences.workspace.dailyGoalHours,
+                              tracked: value, now: now)
         }
     }
 

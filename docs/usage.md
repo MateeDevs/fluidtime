@@ -33,7 +33,7 @@ Native settings keep your account, tracking preferences, menu bar display, and s
 
 The default shortcut to open Fluidtime is **Control–Option–Shift–Command–F** (`⌃⌥⇧⌘F`). **Control–Option–Shift–Command–T** (`⌃⌥⇧⌘T`) starts or stops your timer. Starting uses your most recent completed work entry. Change either shortcut in **Settings → Menu bar**.
 
-Configure work targets, lunch hours, and reminders in **Settings → Workspace**. The main window and menu bar are both available. The Dock icon appears while the main window or Settings is open. Launch at login starts in the menu bar without opening the main window.
+Configure work targets, lunch hours, and reminders in **Settings → Workspace**. A small caption below today’s total estimates when you will reach the daily target, assuming uninterrupted work from now. It appears in the expanded main timer and menu panel; set the daily target to zero to hide it. The main window and menu bar are both available. The Dock icon appears while the main window or Settings is open. Launch at login starts in the menu bar without opening the main window.
 
 Time at work spans the first work entry start to the last work entry end each day, or now while work runs. It includes estimated lunch and other gaps. Earnings use tracked work only, so lunch is not deducted a second time.
 

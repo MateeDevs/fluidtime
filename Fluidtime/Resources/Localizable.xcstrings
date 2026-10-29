@@ -1,6 +1,150 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "finish.expectedAt": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. The parameter is the localized finish time in the account time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expected finish at %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očekávaný konec v %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očakávaný koniec o %@"
+          }
+        }
+      }
+    },
+    "finish.startNowAt": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. The parameter is the localized finish time in the account time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish at %@ if you start now"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konec v %@, pokud začnete teď"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koniec o %@, ak začnete teraz"
+          }
+        }
+      }
+    },
+    "finish.expectedTomorrowAt": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. The parameter is the localized finish time in the account time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expected finish tomorrow at %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očekávaný konec zítra v %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očakávaný koniec zajtra o %@"
+          }
+        }
+      }
+    },
+    "finish.startNowTomorrowAt": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. The parameter is the localized finish time in the account time zone.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finish tomorrow at %@ if you start now"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konec zítra v %@, pokud začnete teď"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koniec zajtra o %@, ak začnete teraz"
+          }
+        }
+      }
+    },
+    "finish.targetReached": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. Explains progress toward the daily work target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daily target reached"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denní cíl splněn"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denný cieľ splnený"
+          }
+        }
+      }
+    },
+    "finish.help": {
+      "extractionState": "manual",
+      "comment": "Small caption below today's tracked total. Explains progress toward the daily work target.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Based on your daily target and tracked time today. Assumes uninterrupted work from now, with no future breaks. Uses your Solidtime time zone."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podle denního cíle a dnešního zaznamenaného času. Předpokládá nepřetržitou práci od této chvíle bez dalších přestávek. Používá časové pásmo ze Solidtime."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podľa denného cieľa a dnešného zaznamenaného času. Predpokladá nepretržitú prácu od tejto chvíle bez ďalších prestávok. Používa časové pásmo zo Solidtime."
+          }
+        }
+      }
+    },
     "alpha.menuBarText": {
       "extractionState": "manual",
       "comment": "Alpha build status item. Preserve the Greek alpha marker. The parameter is the localized duration, or an empty string for icon-only display modes.",

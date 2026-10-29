@@ -83,8 +83,13 @@ struct MenuBarView: View {
     private var totals: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let totals = store.data.totals(at: context.date)
-            HStack(spacing: 12) {
-                totalCell(.today, value: totals.today)
+            HStack(alignment: .top, spacing: 12) {
+                VStack(alignment: .leading, spacing: 4) {
+                    totalCell(.today, value: totals.today)
+                    WorkFinishCaption(data: store.data, targetHours: store.preferences.workspace.dailyGoalHours,
+                                      tracked: totals.today, now: context.date)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
                 Divider()
                 totalCell(.thisWeek, value: totals.week)
             }
